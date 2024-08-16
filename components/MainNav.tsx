@@ -6,20 +6,18 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils"
 import { Category } from "@/types";
 
-interface MainNavProps {
-  data: Category[];
-}
+// interface MainNavProps {
+//   data: Category[];
+// }
 
-const MainNav: React.FC<MainNavProps> = ({
-  data
-}) => {
-  const pathname = usePathname();
+const MainNav = () => {
+  // const pathname = usePathname();
 
-  const routes = data.map((route) => ({
-    href: `/category/${route.id}`,
-    label: route.name,
-    active: pathname === `/category/${route.id}`,
-  }));
+  // const routes = data.map((route) => ({
+  //   href: `/category/${route.id}`,
+  //   label: route.name,
+  //   active: pathname === `/category/${route.id}`,
+  // }));
 
   return (
     <nav

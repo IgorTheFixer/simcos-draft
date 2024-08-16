@@ -23,7 +23,8 @@
     {
         "id": "TK2VCESBNKVFX7VJFWVTYO32",
         "name": "Fried Chicken Sandwich",
-        "price": "995"
+        "price": "995",
+        "image": "/chicken sandhwich wooden table edit.png"
     }
 ],
   "Dinners": [
@@ -52,12 +53,14 @@
     {
         "id": "KNZ5EADQVR4OWPS4DU5XXESY",
         "name": "Fried Chicken Wing Platter",
-        "price": "1795"
+        "price": "1795",
+        "image": "/chicken sandhwich wooden table edit.png"
     },
     {
         "id": "TYCXO6U6HPUJJMA3I7TNDV3U",
         "name": "Fried Chicken Finger Platter",
-        "price": "1795"
+        "price": "1795",
+        "image": "/Edited ChickenFingerDinner.png"
     },
     {
         "id": "MHL7E6Q6YKBPJGGYZ5CVRFCC",
@@ -188,7 +191,8 @@
     {
         "id": "Z5JJCYZXEHA3BMYAUKFQRKI2",
         "name": "Ziti Steak Tips Alfredo",
-        "price": "2295"
+        "price": "2295",
+        "image": "/Edited_SteakTipCityBrooklyn.png"
     },
     {
         "id": "7RWNU52NI5LO7TY3TMKI4TTP",
@@ -230,13 +234,15 @@
         "id": "VXW3UW2L6XQEKEQT6ILPGKGI",
         "name": "Hot Dog with French Fries",
         "price": "1195",
-        "toppings": ["mustard", "ketchup", "onion", "relish"]
+        "toppings": ["mustard", "ketchup", "onion", "relish"],
+        "image": "/hot dog on white plate wooden table edit.png"
     },
     {
         "id": "VVXTWE2GNLLA2XMTJCKTTY6V",
         "name": "Hot Dog with Onion Rings",
         "price": "1195",
-        "toppings": ["mustard", "ketchup", "onion", "relish"]
+        "toppings": ["mustard", "ketchup", "onion", "relish"],
+        "image": "/Edited_HotDogWOnionRings.png"
     },
     {
         "id": "MM4OVCJHQLJ5FFFVXL3L7YNS",
@@ -299,7 +305,8 @@
         "name": "Cheeseburger with French Fries",
         "price": "1395",
         "toppings": ["mustard", "ketchup", "onion", "relish"],
-        "preparation": ["Rare", "Medium Rare", "Medium", "Medium Well", "Well Done"]
+        "preparation": ["Rare", "Medium Rare", "Medium", "Medium Well", "Well Done"],
+        "image":"/cheeseburger fries on wooden table.png"
     }
 ],
   "Pizza": [
@@ -343,7 +350,8 @@
         "name": "Pepperoni Pizza",
         "price": "1195",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1195", "1595"] 
+        "sizesPrice": ["1195", "1595"],
+        "image": "/pizza on wooden table.png" 
     },
     {
         "id": "VLHHIVY35ZYUXZODHPQ62SQG",
@@ -525,7 +533,8 @@
         "name": "Steak and Cheese Calzone",
         "price": "1295",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1295", "1795"]
+        "sizesPrice": ["1295", "1795"],
+        "image": "/Edited_Steak&CheeseCalzone.png"
     },
     {
         "id": "SVSHWNA4O3OGP7U2IGXZYIEM",
@@ -690,7 +699,8 @@
         "price": "1095",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1095", "1295"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/Edited_ItalianSub.png"
     },
     {
         "id": "V4AT6LZDEYFH5VF5KQN6YJK2",
@@ -706,7 +716,8 @@
         "price": "1095",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1095", "1295"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/Edited_Ham&CheeseSub.png"
     },
     {
         "id": "XKHGST7P57DT5XQEHMOJPS62",
@@ -714,7 +725,8 @@
         "price": "1095",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1095", "1295"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/Edited_TurkeySub.png"
     },
     {
         "id": "CGDVPRMVAVISWE56ODPIUJJP",
@@ -851,7 +863,8 @@
         "name": "Steak and Cheese Sub",
         "price": "1195",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1295", "1495"]
+        "sizesPrice": ["1295", "1495"],
+        "image": "/steak and cheese edit.png"
     },
     {
         "id": "52DPGWGRUQBF6EI4C2JQCB6V",
@@ -907,7 +920,8 @@
     {
         "id": "RTWVCD5NTOM3F5BYGTX3WTXR",
         "name": "Fish and Chips",
-        "price": "1995"
+        "price": "1995",
+        "image": "/Edited Simcos_Fish&Chips (1).png"
     },
     {
         "id": "AJZLCV6TB5L6SICXL2GEELHL",
@@ -917,7 +931,8 @@
     {
         "id": "5SNI5HZKSB3LXNIHSFCXW2TD",
         "name": "Haddock Plate",
-        "price": "2495"
+        "price": "2495",
+        "image": "/Edited_FriedHaddock.png"
     },
     {
         "id": "BOBOIGQHEVWIU7KAKH6H3KRM",
@@ -927,12 +942,14 @@
     {
         "id": "G24V2XPESNAI7IQPTHIAD47M",
         "name": "Clam Strip Plate",
-        "price": "2495"
+        "price": "2495",
+        "image": "/Edited_FriedClamStrips.png"
     },
     {
         "id": "DAANR4WEHPTK7ZSIGFJE6PWX",
         "name": "Shrimp Plate",
-        "price": "2595"
+        "price": "2595",
+        "image": "/Edited_ShrimpPlate.png"
     },
     {
         "id": "Q7HZNBR2M3VHEODLZDGD7C3R",
@@ -1015,14 +1032,16 @@
         "name": "Scallop Box",
         "price": "2995",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["2995", "3995"]
+        "sizesPrice": ["2995", "3995"],
+        "image": "/Simcos_FriedScallops wooden table edit.png"
     },
     {
         "id": "UQ45WG76FPOFIE2C3ALUYP6M",
         "name": "Shrimp Box",
         "price": "1995",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1995", "3295"]
+        "sizesPrice": ["1995", "3295"],
+        "image": "/super regular white plate wooden table edit.png"
     },
     {
         "id": "IKP4NDVHMHT45OR3UDWVJN2Y",
@@ -1154,7 +1173,8 @@
     {
         "id": "GB2VABZQVWH3GYEE7DPMQ4XV",
         "name": "Banana Boat",
-        "price": "1295"
+        "price": "1295",
+        "image": "/Edited_BananaBoat.png"
     },
     {
         "id": "62FP7HOJO5GP477HTX7GIMOY",
@@ -1183,17 +1203,20 @@
           "Butter Pecan",
           "Almond Joy",
           "Frozen Pudding"
-        ]
+        ],
+        "image": "/chocolte icream wooden table.png"
     },
     {
         "id": "I6T2UBLJPMCYSUB4W36MEHNK",
         "name": "Sundaes",
-        "price": "1095"
+        "price": "1095",
+        "image": "/Edited_HotFudgeSundae Org cup.png"
     },
     {
         "id": "WPVZY4XRWONEA6UE6HH3AEDG",
         "name": "Frappes",
-        "price": "575"
+        "price": "575",
+        "image": "/Edited_StrawberryFrappe.png"
     },
     {
         "id": "QYS7PLCGFUD2GDBCFCPAI2Y2",
@@ -1208,12 +1231,14 @@
     {
         "id": "OGOZBN3NH4FQXRUJGH3M4FJR",
         "name": "Raspberry Lime Rickey",
-        "price": "795"
+        "price": "795",
+        "image": "/raspberry lime ricky wooden table edit.png"
     },
     {
         "id": "ZNFU4KPRWCS6ZZTIJJQLORYU",
         "name": "Cheesecake",
-        "price": "695"
+        "price": "695",
+        "image": "/Edited_StrawberryCheesecake.png"
     },
     {
         "id": "ZYOFSYSVVGZXOR5DAIDZZIYU",
@@ -1228,7 +1253,8 @@
     {
         "id": "HYTKZM6HNL2XEBKXDJYS6Y2E",
         "name": "Fried Dough",
-        "price": "895"
+        "price": "895",
+        "image": "/Edited_FriedDough.png"
     },
     {
         "id": "2FNE75YIANPHFR225PWJ5EMC",

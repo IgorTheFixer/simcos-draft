@@ -14,9 +14,9 @@ import Link from "next/link";
 export const revalidate = 0;
 
 const HomePage = async () => {
-  const products = await getProducts({ isFeatured: true });
+  // const products = await getProducts({ isFeatured: true });
   // TODO:refactor to make more dynamic
-  const billboard = await getBillboard(`179e1a71-193b-4f5f-aaae-07ffef632132`);
+  // const billboard = await getBillboard(`179e1a71-193b-4f5f-aaae-07ffef632132`);
 
   return (
     <Container>

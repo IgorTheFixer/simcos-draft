@@ -6,7 +6,7 @@ import NavbarActions from "@/components/NavbarActions";
 import getCategories from "@/actions/getCategories";
 
 const Navbar = async () => {
-  const categories = await getCategories();
+  // const categories = await getCategories();
 
   return ( 
     <div className="sm:flex md:fixed w-full">
@@ -14,7 +14,7 @@ const Navbar = async () => {
           <Link href="/" className="ml-0 flex gap-x-2">
             <p className="font-bold text-xl text-white">Home</p>
           </Link>
-          <MainNav data={categories} />
+          <MainNav />
           <div className="justify-end">
             <NavbarActions />
           </div>
