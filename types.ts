@@ -9,6 +9,7 @@ export interface Product {
   price: string;
   modifiers?: Array<Object>;
   sizeOptions?: Array<Object>
+  uniqueId?: string
 };
 
 export interface Image {

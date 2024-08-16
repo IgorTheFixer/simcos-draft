@@ -10,14 +10,9 @@ import useCart from "@/hooks/useCart";
 import { toast } from "react-hot-toast";
 import Link from "next/link";
 
-interface CartItem {
-  id: string;
-  price: number; // Ensure price is a number
-}
-
 const Summary = () => {
   const searchParams = useSearchParams();
-  const items = useCart((state) => state.items as CartItem[]);
+  const items = useCart((state) => state.items);
   const removeAll = useCart((state) => state.removeAll);
 
   useEffect(() => {
@@ -32,7 +27,6 @@ const Summary = () => {
   }, [searchParams, removeAll]);
 
   const totalPrice = items.reduce((total, item) => {
-     {/* @ts-ignore */}
     return total + Number(item.price)
   }, 0);
 
