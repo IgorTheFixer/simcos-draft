@@ -10,9 +10,14 @@ import useCart from "@/hooks/useCart";
 import { toast } from "react-hot-toast";
 import Link from "next/link";
 
+interface CartItem {
+  id: string;
+  price: number; // Ensure price is a number
+}
+
 const Summary = () => {
   const searchParams = useSearchParams();
-  const items = useCart((state) => state.items);
+  const items = useCart((state) => state.items as CartItem[]);
   const removeAll = useCart((state) => state.removeAll);
 
   useEffect(() => {
@@ -29,7 +34,7 @@ const Summary = () => {
   const totalPrice = items.reduce((total, item) => {
      {/* @ts-ignore */}
     return total + Number(item.price)
-  });
+  }, 0);
 
   // Stripe Implementation
   // const onCheckout = async () => {
