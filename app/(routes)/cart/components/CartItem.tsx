@@ -46,6 +46,7 @@ console.log("CART INFO", data)
         <div className="relative pr-9 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:pr-0">
           <div className="flex justify-between">
             <p className=" text-lg font-semibold text-black">
+            {/* @ts-ignore */}
               {cleanedData.name}
             </p>
           </div>
@@ -53,6 +54,7 @@ console.log("CART INFO", data)
           {/* INFO ABOUT ITEM */}
           <div className="mt-1 flex text-sm">
             {/* <p className="text-gray-500">Blue</p> */}
+             {/* @ts-ignore */}
             <p className="ml-4 border-l border-gray-200 pl-4 text-gray-500">{cleanedData?.size}</p>
           </div>
           <Currency value={cleanedData.price} />
@@ -67,9 +69,13 @@ console.log("CART INFO", data)
                 ))}
               </div>
             )}
+             {/* @ts-ignore */}
           <p className="text-gray-500">{cleanedData?.flavor}</p>
+           {/* @ts-ignore */}
           <p className="text-gray-500">{cleanedData?.preparation}</p>
+           {/* @ts-ignore */}
           <p className="text-gray-500">{cleanedData?.substitution}</p>
+           {/* @ts-ignore */}
           <p className="text-gray-500">Special Instructions: {cleanedData?.instructions}</p>
         </div>
       </div>

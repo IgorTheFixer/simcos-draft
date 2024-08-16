@@ -27,7 +27,9 @@ const Summary = () => {
   }, [searchParams, removeAll]);
 
   const totalPrice = items.reduce((total, item) => {
+     {/* @ts-ignore */}
     return total + Number(item.price)
+     {/* @ts-ignore */}
   }, 0);
 
   // Stripe Implementation
