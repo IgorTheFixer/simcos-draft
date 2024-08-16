@@ -29,8 +29,7 @@ const Summary = () => {
   const totalPrice = items.reduce((total, item) => {
      {/* @ts-ignore */}
     return total + Number(item.price)
-     {/* @ts-ignore */}
-  }, 0);
+  });
 
   // Stripe Implementation
   // const onCheckout = async () => {
