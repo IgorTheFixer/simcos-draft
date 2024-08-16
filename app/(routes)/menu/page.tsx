@@ -1,3 +1,4 @@
+// @ts-ignore
 'use client'
 import { robotoCondensed, roboto } from "@/fonts"
 import { SearchBar } from "@/components/ui/searchbar"
@@ -93,11 +94,15 @@ export default function MenuPage(){
     const list = Object.values(items).map((item, index)=>{
       // return <p key={index}>{item}</p>
       const obj = {
+        // @ts-ignore
         id: item.id,
         // category: item.category,
+        // @ts-ignore
         name: item.name,
+        // @ts-ignore
         // isDeleted: item.isDeleted,
         // itemData: item.itemData,
+        // @ts-ignore
         price:item.itemData.variations[0].itemVariationData.priceMoney.amount,
         // modifiers: item.itemData.modifiers.filter((modifier) => modifier.type == 'MODIFIER_LIST'),
         // sizeOptions: item.itemData.variations

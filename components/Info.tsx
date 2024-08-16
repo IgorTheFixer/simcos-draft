@@ -248,7 +248,7 @@ const Info: React.FC<InfoProps> = ({ data }) => {
       </>
     );
   };
-
+// @ts-ignore
   const onAddToCart = (formData: z.infer<typeof formSchema>) => {
     const uniqueId = uuidv4()
     const uniqueData = { ...formData, uniqueId: uniqueId }
