@@ -100,12 +100,14 @@
     {
         "id": "WEUPCLKXCBYYCQ7PCRSWJOXQ",
         "name": "Clam Chowder",
-        "price": "600"
+        "price": "600",
+        "image": "Clam Chowder.jpg"
     },
     {
         "id": "DMEHRD3FTUAYH5HYNMFQU5RI",
         "name": "Chili Soup",
-        "price": "600"
+        "price": "600",
+        "image": "Chilli.jpg"
     },
     {
         "id": "NYKIVBNELCRYJLNDNZI6WAQC",
