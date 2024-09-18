@@ -31,7 +31,8 @@
     {
         "id": "7FSQNNNCAVCQQ4WAYUCJ2ZKS",
         "name": "Steak Tips Dinner",
-        "price": "2495"
+        "price": "2495",
+        "image": "Steak Tip Dinner.jpg"
     },
     {
         "id": "L4MU34JLAWJURXCD3P7QHWXB",
@@ -41,7 +42,14 @@
     {
         "id": "IQWBCFQOXDBGDB6TW27QHS7O",
         "name": "Souvlaki Dinner",
-        "price": "2495"
+        "price": "2495",
+        "image": "Slouvaki.jpg"
+    },
+    {
+        "id": "Z5NFGJW2XKLRQ7V8BDY3HP6A",
+        "name": "Souvlaki Dinner with Pita",
+        "price": "2695",
+        "image": "Slouvaki W_Pita.jpg"
     },
     {
         "id": "PCPNPQD5TTDJYOICRPSGEL66",
@@ -54,13 +62,13 @@
         "id": "KNZ5EADQVR4OWPS4DU5XXESY",
         "name": "Fried Chicken Wing Platter",
         "price": "1795",
-        "image": "/chicken sandhwich wooden table edit.png"
+        "image": "Chicken Wing Dinner.jpg"
     },
     {
         "id": "TYCXO6U6HPUJJMA3I7TNDV3U",
         "name": "Fried Chicken Finger Platter",
         "price": "1795",
-        "image": "/Edited ChickenFingerDinner.png"
+        "image": "Chicken Finger Dinner.jpg"
     },
     {
         "id": "MHL7E6Q6YKBPJGGYZ5CVRFCC",
