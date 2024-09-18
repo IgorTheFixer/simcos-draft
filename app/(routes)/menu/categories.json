@@ -1204,13 +1204,19 @@
           "Almond Joy",
           "Frozen Pudding"
         ],
-        "image": "/chocolte icream wooden table.png"
+        "image": "Icrecream.jpg"
     },
     {
         "id": "I6T2UBLJPMCYSUB4W36MEHNK",
         "name": "Sundaes",
         "price": "1095",
         "image": "/Edited_HotFudgeSundae Org cup.png"
+    },
+    {
+      "id": "P3KLMDX6QVHJT9W2CFG5SR8N",
+      "name": "Banana Pudding",
+      "price": "795",
+      "image": "Banana Pudding Plastic.jpg"
     },
     {
         "id": "WPVZY4XRWONEA6UE6HH3AEDG",
