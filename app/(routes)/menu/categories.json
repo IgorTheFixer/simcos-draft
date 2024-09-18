@@ -900,14 +900,16 @@
         "name": "Steak and Pepper Sub",
         "price": "1195",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1195", "1495"]
+        "sizesPrice": ["1195", "1495"],
+        "image": "Steak and Pepper Sub.jpg"
     },
     {
         "id": "XIHJRMDP2X767GCLVEQN57UW",
         "name": "Steak and Mushroom Sub",
         "price": "1195",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1195", "1495"]
+        "sizesPrice": ["1195", "1495"],
+        "image": "Steak and Mushroom Sub.jpg"
     },
     {
         "id": "WHGY6QQ3Z5WFZP26PRD7ZBAN",
@@ -928,7 +930,8 @@
         "name": "Steak Combo Sub",
         "price": "1395",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1395", "1595"]
+        "sizesPrice": ["1395", "1595"],
+        "image": "Loaded Steak Sub.jpg"
     },
     {
         "id": "EDVO7YCK62RBBSBOKGSUOSQG",
