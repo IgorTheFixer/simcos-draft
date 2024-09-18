@@ -932,7 +932,13 @@
         "id": "RTWVCD5NTOM3F5BYGTX3WTXR",
         "name": "Fish and Chips",
         "price": "1995",
-        "image": "/Edited Simcos_Fish&Chips (1).png"
+        "image": "Fish and Chips.jpg"
+    },
+    {
+      "id": "V8WRZJQ7LNPXT4Y6CDF3KH2M",
+      "name": "Fish Sandwich with French Fries",
+      "price": "1595",
+      "image": "Fish Sandwich Plate.jpg"
     },
     {
         "id": "AJZLCV6TB5L6SICXL2GEELHL",
@@ -954,13 +960,13 @@
         "id": "G24V2XPESNAI7IQPTHIAD47M",
         "name": "Clam Strip Plate",
         "price": "2495",
-        "image": "/Edited_FriedClamStrips.png"
+        "image": "Clam Strips.jpg"
     },
     {
         "id": "DAANR4WEHPTK7ZSIGFJE6PWX",
         "name": "Shrimp Plate",
         "price": "2595",
-        "image": "/Edited_ShrimpPlate.png"
+        "image": "Shrimp Combo Plate.jpg"
     },
     {
         "id": "Q7HZNBR2M3VHEODLZDGD7C3R",
@@ -980,7 +986,8 @@
     {
         "id": "JAFZVL4CHU4ZNKC47KGAEJEF",
         "name": "Simco's Super Seafood Plate",
-        "price": "3895"
+        "price": "3895",
+        "image": "Super Regular.jpg"
     },
     {
         "id": "SENVZPUEHMSL2SCPY74LMC4R",
@@ -995,7 +1002,8 @@
     {
         "id": "USMNLPKQDCZRBMV4SMN726S2",
         "name": "Clam Strip Roll",
-        "price": "1695"
+        "price": "1695",
+        "image": "Clam Roll.jpg"
     },
     {
         "id": "ZBHWDNN3FRLFWPCFSMWO6EO3",
@@ -1045,7 +1053,7 @@
         "price": "2995",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["2995", "3995"],
-        "image": "/Simcos_FriedScallops wooden table edit.png"
+        "image": "Fried Scallops.jpg"
     },
     {
         "id": "UQ45WG76FPOFIE2C3ALUYP6M",
