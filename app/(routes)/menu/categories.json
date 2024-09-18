@@ -159,12 +159,14 @@
     {
         "id": "R6ASSHAHDJDO7AHYFW64PO53",
         "name": "Spaghetti with Sauce and Cheese",
-        "price": "1295"
+        "price": "1295",
+        "image": "Pasta Dinner.jpg"
     },
     {
         "id": "NMSJFIXHCZH2ADLCN2OSQPEF",
         "name": "Spaghetti with Meatball",
-        "price": "1495"
+        "price": "1495",
+        "image": "Spaghetti and Meatballs.jpg"
     },
     {
         "id": "IBJJKUHSI43WS3YYWEGG26WL",
@@ -189,7 +191,8 @@
     {
         "id": "BHILIV67QD6SYD3XBA4N5EFN",
         "name": "Ziti Chicken Broccoli Alfredo",
-        "price": "1995"
+        "price": "1995",
+        "image": "Grilled Chicken Broccoli Alfredo.jpg"
     },
     {
         "id": "5ADCB4ESAV5T476ZBEO44MU6",
