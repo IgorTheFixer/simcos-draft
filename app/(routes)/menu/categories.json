@@ -1036,7 +1036,8 @@
         "name": "Clam Strip Box",
         "price": "1495",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1495", "2195"]
+        "sizesPrice": ["1495", "2195"],
+        "image": "Clam Strip Box.jpg"
     },
     {
         "id": "ACE4FDGBHDZS3FLDSJ5IEU6C",
@@ -1052,42 +1053,47 @@
         "price": "1995",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1995", "3295"],
-        "image": "/super regular white plate wooden table edit.png"
+        "image": "Shrimp Box.jpg"
     },
     {
         "id": "IKP4NDVHMHT45OR3UDWVJN2Y",
         "name": "French Fries Box",
         "price": "695",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["695", "895"]
+        "sizesPrice": ["695", "895"],
+        "image": "Fries Box.jpg"
     },
     {
         "id": "MRE2CPT4ZRB46ZJ2GBDLWBAN",
         "name": "Onion Rings Box",
         "price": "695",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["695", "895"]
+        "sizesPrice": ["695", "895"],
+        "image": "Onion Ring Box.jpg"
     },
     {
         "id": "L4YIYTN46SHUM4TGBOALIALI",
         "name": "Chicken Fingers Box",
         "price": "1395",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1395", "1795"]
+        "sizesPrice": ["1395", "1795"],
+        "image": "Chicken Finger Box.jpg"
     },
     {
         "id": "BOGB5FKYYN3WLDTUSNUQRGC5",
         "name": "Chicken Wings Box",
         "price": "1395",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1395", "1795"]
+        "sizesPrice": ["1395", "1795"],
+        "image": "Chicken Wing Box.jpg"
     },
     {
         "id": "6ABYG3UJAHD7MTQ2ZLF3SYZ4",
         "name": "Buffalo Wings Box",
         "price": "1395",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1395", "1795"]
+        "sizesPrice": ["1395", "1795"],
+        "image": "Buffalo Wing Box.jpg"
     },
     {
         "id": "6B3F6TKYE6E3ZY3OIS3BWE7R",
@@ -1121,7 +1127,8 @@
         "name": "Ribs Box",
         "price": "1595",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1595", "1995"]
+        "sizesPrice": ["1595", "1995"],
+        "image": "Ribs.jpg"
     },
     {
         "id": "GUAI72DLO3X5XBIPUQDSA6H2",
@@ -1135,7 +1142,8 @@
         "name": "Fish Box",
         "price": "1795",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1795", "2295"]
+        "sizesPrice": ["1795", "2295"],
+        "image": "Fish Box.jpg"
     },
     {
         "id": "XWOYV6QN3QLTHXL7PHW3CQHF",
