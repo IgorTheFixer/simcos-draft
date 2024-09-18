@@ -1291,7 +1291,9 @@
     {
         "id": "GGHUXDXVCTRCSLKRZFLB3FFT",
         "name": "Pepsi",
-        "price": "300"
+        "price": "300",
+        "image": "Pepsi.jpg"
+
     },
     {
         "id": "5B3WRCSS2MOYOOPTWIJMKAUU",
@@ -1301,7 +1303,20 @@
     {
         "id": "T6BDBZCQYSN5FDEQTTR7WRP6",
         "name": "Ginger Ale",
-        "price": "300"
+        "price": "300",
+        "image": "Ginger Ale.jpg"
+    },
+    {
+      "id": "X9TLQGZ5AVPMNW6JRSK2BV9E",
+      "name": "Joe's Mango Tea",
+      "price": "300",
+      "image": "Joes Mango.jpg"
+    },
+    {
+      "id": "H7JRDQK9BWXPFY3MVLZ8NT2C",
+      "name": "Joe's Peach Tea",
+      "price": "300",
+      "image": "Joes Peach Tea.jpg"
     },
     {
         "id": "PAZNALOCJGAUQJPGZ42C6RLJ",
@@ -1336,7 +1351,8 @@
     {
         "id": "OVIJHVSTBYBXZG6TMGDZ7UJB",
         "name": "Root Beer",
-        "price": "300"
+        "price": "300",
+        "image": "Root Beer.jpg"
     },
     {
         "id": "FDS6EZZZR3UCYXRIOCZ6V6SO",
