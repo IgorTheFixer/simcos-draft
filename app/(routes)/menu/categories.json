@@ -124,7 +124,8 @@
     {
         "id": "V7WWDIAJM3WPZMBPZGQESPOC",
         "name": "Roast Beef Wrap",
-        "price": "1495"
+        "price": "1495",
+        "image": "Roast beef Wrap.jpg"
     },
     {
         "id": "TYYZ23ODB7VQPYF26K5ZJU2V",
@@ -139,7 +140,8 @@
     {
         "id": "TGHRJTS7I3G22QTL7JQ5Y3ZK",
         "name": "Crispy Chicken Wrap",
-        "price": "1695"
+        "price": "1695",
+        "image": "Crispy Chicken Wrap.jpg"
     },
     {
         "id": "ZZIOMU4TURM6EZI7AEZID445",
@@ -328,7 +330,8 @@
         "name": "Plain Pizza",
         "price": "1195",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1195", "1595"] 
+        "sizesPrice": ["1195", "1595"],
+        "image": "Cheese Pizza.jpg" 
     },
     {
         "id": "3MX7JREXMAEP6WCYZ4GBOA76",
@@ -364,7 +367,7 @@
         "price": "1195",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1195", "1595"],
-        "image": "/pizza on wooden table.png" 
+        "image": "Pepperoni-Pizza.jpg" 
     },
     {
         "id": "VLHHIVY35ZYUXZODHPQ62SQG",
@@ -1200,7 +1203,8 @@
     {
         "id": "G6BYMBR7UH5VR4APWW5EJL7N",
         "name": "Cheese Pizza Slice",
-        "price": "250"
+        "price": "250",
+        "image": "Slice Cheese.jpg"
     }
 ],
   "Desserts": [
