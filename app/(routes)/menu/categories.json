@@ -232,7 +232,8 @@
         "id": "VVZTRO75GFVG4D2PWEFAFE7T",
         "name": "Hot Sausage",
         "price": "650",
-        "toppings": ["mustard", "ketchup", "onion", "relish"]
+        "toppings": ["mustard", "ketchup", "onion", "relish"],
+        "images": "Hot Sausage.jpg"
     },
     {
         "id": "ESCGA67LHF42G6JQ642QG7H6",
@@ -251,14 +252,14 @@
         "name": "Hot Dog with French Fries",
         "price": "1195",
         "toppings": ["mustard", "ketchup", "onion", "relish"],
-        "image": "/hot dog on white plate wooden table edit.png"
+        "image": "Loaded Hot Dog w_ Fries.jpg"
     },
     {
         "id": "VVXTWE2GNLLA2XMTJCKTTY6V",
         "name": "Hot Dog with Onion Rings",
         "price": "1195",
         "toppings": ["mustard", "ketchup", "onion", "relish"],
-        "image": "/Edited_HotDogWOnionRings.png"
+        "image": "Hot Dog W_Onion Rings.jpg"
     },
     {
         "id": "MM4OVCJHQLJ5FFFVXL3L7YNS",
@@ -294,7 +295,8 @@
     {
         "id": "JQA4PP7DAX4U5J2GBI2U26JM",
         "name": "Cheese French Fries",
-        "price": "795"
+        "price": "795",
+        "image": "Cheese Fries.jpg"
     },
     {
         "id": "NBUOEB4IE67UUKMHEFJJU6J4",
@@ -309,7 +311,8 @@
     {
         "id": "YCG6GCLSE5RKO227FAHKXWYY",
         "name": "Chili Hot Dog",
-        "price": "575"
+        "price": "575",
+        "image": "Chilli Dog.jpg"
     },
     {
         "id": "PGLGNHWCLYGFWWZKMIVPSTCW",
@@ -322,7 +325,7 @@
         "price": "1395",
         "toppings": ["mustard", "ketchup", "onion", "relish"],
         "preparation": ["Rare", "Medium Rare", "Medium", "Medium Well", "Well Done"],
-        "image":"/cheeseburger fries on wooden table.png"
+        "image":"Cheeseburger and Fries.jpg"
     }
 ],
   "Pizza": [
