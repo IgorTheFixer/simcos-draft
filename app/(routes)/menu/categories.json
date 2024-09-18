@@ -597,7 +597,8 @@
     {
         "id": "SEITUGPQMM2KNGM6TZ3RG7UW",
         "name": "Grilled Chicken Salad",
-        "price": "1495"
+        "price": "1495",
+        "image": "Grilled Chicken Garden.jpg"
     },
     {
         "id": "ZS3BJD22N4YCYXQTTNKJ22U6",
@@ -627,12 +628,14 @@
     {
         "id": "7NC2VKOEIEE3B7ZDG3QUJT5A",
         "name": "Chef's Salad",
-        "price": "1295"
+        "price": "1295",
+        "image": "Garden Salad.jpg"
     },
     {
         "id": "NV65NSOJQWK562NXD5YCVQPZ",
         "name": "Steak Tip Salad",
-        "price": "1995"
+        "price": "1995",
+        "image": "Steak on Caesar Salad.jpg"
     },
     {
         "id": "J55FLCJWUN5OMF3TGPXIJ6EV",
@@ -642,12 +645,14 @@
     {
         "id": "JAMV6IPUHCOUFKUEYRABJUD3",
         "name": "Caesar Salad",
-        "price": "995"
+        "price": "995",
+        "image": "Ceasar Salad.jpg"
     },
     {
         "id": "MTQUAKHMMZIYD2T7AMUSPROO",
         "name": "Grilled Chicken Caesar Salad",
-        "price": "1695"
+        "price": "1695",
+        "image": "Grilled Chicken on Ceasar.jpg"
     },
     {
         "id": "KRVHDK4BUTFQBKETJS7Q5OQ7",
