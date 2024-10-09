@@ -14,6 +14,7 @@ const Summary = () => {
   const searchParams = useSearchParams();
   const items = useCart((state) => state.items);
   const removeAll = useCart((state) => state.removeAll);
+  const cartTotal = useCart((state)=> state.cartTotal)
 
   useEffect(() => {
     if (searchParams.get('success')) {
@@ -26,9 +27,9 @@ const Summary = () => {
     }
   }, [searchParams, removeAll]);
 
-  const totalPrice = items.reduce((total, item) => {
-    return total + Number(item.price)
-  }, 0);
+  // const totalPrice = items.reduce((total, item) => {
+  //   return total + Number(item.price)
+  // }, 0);
 
   // Stripe Implementation
   // const onCheckout = async () => {
@@ -49,7 +50,7 @@ const Summary = () => {
       <div className="mt-6 space-y-4">
         <div className="flex items-center justify-between border-t border-gray-200 pt-4">
           <div className="text-base font-medium text-gray-900">Order total</div>
-         <Currency value={totalPrice} />
+         <Currency value={cartTotal} />
         </div>
       </div>
       <Link href="/checkout">
