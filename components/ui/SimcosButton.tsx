@@ -21,7 +21,9 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         simcos:
           "bg-[#EBD6B7] text-[#EF370D] text-[20px] rounded-full border-[0.3125rem] border-solid border-[#EF370D] hover:bg-[#EBD6B7]/90",
-        filter: "bg-[#EFEFEF] text-primary-foreground hover:bg-[#EF370D]/90"
+        filter: "bg-[#EFEFEF] text-primary-foreground hover:bg-[#EF370D]/90",
+        nav:
+          "bg-[#EBD6B7] text-[#EF370D] text-[10px] rounded-full border-[0.3125rem] border-solid border-[#EF370D] hover:bg-[#EBD6B7]/90",
       },
       size: {
         default: "h-10 px-4 py-2",

@@ -1,6 +1,6 @@
 "use client";
 import { CreditCard, PaymentForm } from "react-square-web-payments-sdk";
-import { submitPayment } from "./actions/actions";
+import { submitOrder, submitPayment } from "./actions/actions";
 import Container from "@/components/ui/Container";
 import {
   Form,
@@ -16,6 +16,8 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 import Summary from './components/Summary'
+import { useEffect } from "react";
+import useCart from "@/hooks/useCart";
 
 
 const FormSchema = z.object({
@@ -31,6 +33,9 @@ const FormSchema = z.object({
 })
 
 export default function Checkout() {
+  
+  const cartTotal = useCart((state) => state.cartTotal);
+  const items = useCart((state) => state.items);
   // Replace with your application ID and location ID
   // const appId = process.env.SQUARE_APPLICATION_ID;
   const appId = 'sandbox-sq0idb-eFWIML_iUHk3zklfjNUKFw';
@@ -44,10 +49,85 @@ export default function Checkout() {
       postalCode: ""
     },
   })
+  console.log("Cart Items", items)
+  console.log("Cart Total", cartTotal)
+
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
     console.log("Form data:", data);
   }
+
+  const lineItems = items.map((item) => {
+    console.log("Before manipulation", item);
+  
+    // Ensure item.sizes is defined and is an array before using indexOf
+    const sizeIndex = Array.isArray(item.sizes) ? item.sizes.indexOf(item.size) : -1;
+    const price = sizeIndex !== -1 && Array.isArray(item.sizesPrice) ? item.sizesPrice[sizeIndex] : item.price;
+  
+    // Construct modifiers array with toppings, flavor, substitution, and preparation
+    const modifiers = [
+      ...(item.toppings && Object.values(item.toppings).length > 0
+        ? Object.values(item.toppings).map((topping) => ({
+            name: topping,
+            basePriceMoney: {
+              amount: 0,
+              currency: 'USD',
+            },
+          }))
+        : []),
+      ...(item.flavor
+        ? [
+            {
+              name: `Flavor: ${item.flavor}`,
+              basePriceMoney: {
+                amount: 0,
+                currency: 'USD',
+              },
+            },
+          ]
+        : []),
+      ...(item.substitution
+        ? [
+            {
+              name: `Substitution: ${item.substitution}`,
+              basePriceMoney: {
+                amount: 0,
+                currency: 'USD',
+              },
+            },
+          ]
+        : []),
+      ...(item.preparation
+        ? [
+            {
+              name: `Preparation: ${item.preparation}`,
+              basePriceMoney: {
+                amount: 0,
+                currency: 'USD',
+              },
+            },
+          ]
+        : []),
+    ];
+  
+    return {
+      name: item.name,
+      quantity: `${item.quantity}`,
+      itemType: 'ITEM',
+      ...(item.instructions && { note: item.instructions }),
+      ...(item.size && { variationName: item.size }),
+      modifiers,
+      basePriceMoney: {
+        amount: price,
+        currency: 'USD',
+      },
+    };
+  });
+  console.log("Line Items Array",lineItems)
+
+  const finalPrice = lineItems.reduce((total, item) => {
+    return total + Number(item.basePriceMoney.amount)
+  }, 0)
 
   return (
     <Container>
@@ -103,8 +183,10 @@ export default function Checkout() {
           if (isValid) {
             const formData = form.getValues();
             onSubmit(formData);
-            const result = await submitPayment(token.token);
+            const result = await submitPayment(token.token, finalPrice, lineItems);
+            // const orderResult = await submitOrder()
             console.log("Payment result:", result);
+            // console.log("Order Result", orderResult);
           } else {
             console.log("Form validation failed");
           }

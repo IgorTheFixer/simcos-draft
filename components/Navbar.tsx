@@ -9,7 +9,9 @@ const Navbar = async () => {
   // const categories = await getCategories();
 
   return ( 
-    <div className="sm:flex md:fixed w-full">
+    <div className="hidden sm:flex fixed w-full">
+    {/* If they ever want the navbar back on the mobile screen */}
+    {/* <div className="sm:flex md:fixed w-full"> */}
         <div className="relative px-4 sm:px-6 lg:px-8 flex justify-end h-16 items-center min-w-full">
           <Link href="/" className="ml-0 flex gap-x-2">
             <p className="font-bold text-xl text-white">Home</p>

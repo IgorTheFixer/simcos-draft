@@ -3,6 +3,7 @@ import { X } from "lucide-react";
 
 import IconButton from "@/components/ui/IconButton";
 import Currency from "@/components/ui/Currency";
+{/* @ts-ignore */}
 import useCart from "@/hooks/useCart";
 import { Product } from "@/types";
 
@@ -34,10 +35,10 @@ console.log("CART INFO", data)
       <div className="relative h-24 w-24 rounded-md bg-gray-600 overflow-hidden sm:h-48 sm:w-48">
         {data.image && 
           <Image
-            fill
+          fill
             src={data.image}
-            alt=""
-            className="object-cover object-center"
+          alt=""
+          className="object-cover object-center"
           />
         }
       </div>

@@ -4,7 +4,7 @@
         "id": "VSBH5XYSXLSDVHLNAJMZ5NYN",
         "name": "Gyro Sandwich",
         "price": "995",
-        "image": "Gyro Sandwich.jpg"
+        "image": "/Gyro Sandwich.jpg"
     },
     {
         "id": "7NV5YTFHLYR7JBPVZTMHTKB6",
@@ -33,7 +33,7 @@
         "id": "7FSQNNNCAVCQQ4WAYUCJ2ZKS",
         "name": "Steak Tips Dinner",
         "price": "2495",
-        "image": "Steak Tip Dinner.jpg"
+        "image": "/Steak Tip Dinner.jpg"
     },
     {
         "id": "L4MU34JLAWJURXCD3P7QHWXB",
@@ -44,13 +44,13 @@
         "id": "IQWBCFQOXDBGDB6TW27QHS7O",
         "name": "Souvlaki Dinner",
         "price": "2495",
-        "image": "Slouvaki.jpg"
+        "image": "/Slouvaki.jpg"
     },
     {
         "id": "Z5NFGJW2XKLRQ7V8BDY3HP6A",
         "name": "Souvlaki Dinner with Pita",
         "price": "2695",
-        "image": "Slouvaki W_Pita.jpg"
+        "image": "/Slouvaki W_Pita.jpg"
     },
     {
         "id": "PCPNPQD5TTDJYOICRPSGEL66",
@@ -63,13 +63,13 @@
         "id": "KNZ5EADQVR4OWPS4DU5XXESY",
         "name": "Fried Chicken Wing Platter",
         "price": "1795",
-        "image": "Chicken Wing Dinner.jpg"
+        "image": "/Chicken Wing Dinner.jpg"
     },
     {
         "id": "TYCXO6U6HPUJJMA3I7TNDV3U",
         "name": "Fried Chicken Finger Platter",
         "price": "1795",
-        "image": "Chicken Finger Dinner.jpg"
+        "image": "/Chicken Finger Dinner.jpg"
     },
     {
         "id": "MHL7E6Q6YKBPJGGYZ5CVRFCC",
@@ -102,13 +102,13 @@
         "id": "WEUPCLKXCBYYCQ7PCRSWJOXQ",
         "name": "Clam Chowder",
         "price": "600",
-        "image": "Clam Chowder.jpg"
+        "image": "/Clam Chowder.jpg"
     },
     {
         "id": "DMEHRD3FTUAYH5HYNMFQU5RI",
         "name": "Chili Soup",
         "price": "600",
-        "image": "Chilli.jpg"
+        "image": "/Chilli.jpg"
     },
     {
         "id": "NYKIVBNELCRYJLNDNZI6WAQC",
@@ -126,7 +126,7 @@
         "id": "V7WWDIAJM3WPZMBPZGQESPOC",
         "name": "Roast Beef Wrap",
         "price": "1495",
-        "image": "Roast beef Wrap.jpg"
+        "image": "/Roast beef Wrap.jpg"
     },
     {
         "id": "TYYZ23ODB7VQPYF26K5ZJU2V",
@@ -142,7 +142,7 @@
         "id": "TGHRJTS7I3G22QTL7JQ5Y3ZK",
         "name": "Crispy Chicken Wrap",
         "price": "1695",
-        "image": "Crispy Chicken Wrap.jpg"
+        "image": "/Crispy Chicken Wrap.jpg"
     },
     {
         "id": "ZZIOMU4TURM6EZI7AEZID445",
@@ -165,13 +165,13 @@
         "id": "R6ASSHAHDJDO7AHYFW64PO53",
         "name": "Spaghetti with Sauce and Cheese",
         "price": "1295",
-        "image": "Pasta Dinner.jpg"
+        "image": "/Pasta Dinner.jpg"
     },
     {
         "id": "NMSJFIXHCZH2ADLCN2OSQPEF",
         "name": "Spaghetti with Meatball",
         "price": "1495",
-        "image": "Spaghetti and Meatballs.jpg"
+        "image": "/Spaghetti and Meatballs.jpg"
     },
     {
         "id": "IBJJKUHSI43WS3YYWEGG26WL",
@@ -197,7 +197,7 @@
         "id": "BHILIV67QD6SYD3XBA4N5EFN",
         "name": "Ziti Chicken Broccoli Alfredo",
         "price": "1995",
-        "image": "Grilled Chicken Broccoli Alfredo.jpg"
+        "image": "/Grilled Chicken Broccoli Alfredo.jpg"
     },
     {
         "id": "5ADCB4ESAV5T476ZBEO44MU6",
@@ -233,7 +233,7 @@
         "name": "Hot Sausage",
         "price": "650",
         "toppings": ["mustard", "ketchup", "onion", "relish"],
-        "images": "Hot Sausage.jpg"
+        "image": "/Hot Sausage.jpg"
     },
     {
         "id": "ESCGA67LHF42G6JQ642QG7H6",
@@ -252,14 +252,14 @@
         "name": "Hot Dog with French Fries",
         "price": "1195",
         "toppings": ["mustard", "ketchup", "onion", "relish"],
-        "image": "Loaded Hot Dog w_ Fries.jpg"
+        "image": "/Loaded Hot Dog w_ Fries.jpg"
     },
     {
         "id": "VVXTWE2GNLLA2XMTJCKTTY6V",
         "name": "Hot Dog with Onion Rings",
         "price": "1195",
         "toppings": ["mustard", "ketchup", "onion", "relish"],
-        "image": "Hot Dog W_Onion Rings.jpg"
+        "image": "/Hot Dog W_Onion Rings.jpg"
     },
     {
         "id": "MM4OVCJHQLJ5FFFVXL3L7YNS",
@@ -296,7 +296,7 @@
         "id": "JQA4PP7DAX4U5J2GBI2U26JM",
         "name": "Cheese French Fries",
         "price": "795",
-        "image": "Cheese Fries.jpg"
+        "image": "/Cheese Fries.jpg"
     },
     {
         "id": "NBUOEB4IE67UUKMHEFJJU6J4",
@@ -312,7 +312,7 @@
         "id": "YCG6GCLSE5RKO227FAHKXWYY",
         "name": "Chili Hot Dog",
         "price": "575",
-        "image": "Chilli Dog.jpg"
+        "image": "/Chilli Dog.jpg"
     },
     {
         "id": "PGLGNHWCLYGFWWZKMIVPSTCW",
@@ -325,7 +325,7 @@
         "price": "1395",
         "toppings": ["mustard", "ketchup", "onion", "relish"],
         "preparation": ["Rare", "Medium Rare", "Medium", "Medium Well", "Well Done"],
-        "image":"Cheeseburger and Fries.jpg"
+        "image":"/Cheeseburger and Fries.jpg"
     }
 ],
   "Pizza": [
@@ -335,7 +335,7 @@
         "price": "1195",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1195", "1595"],
-        "image": "Cheese Pizza.jpg" 
+        "image": "/Cheese Pizza.jpg" 
     },
     {
         "id": "3MX7JREXMAEP6WCYZ4GBOA76",
@@ -371,7 +371,7 @@
         "price": "1195",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1195", "1595"],
-        "image": "Pepperoni-Pizza.jpg" 
+        "image": "/Pepperoni-Pizza.jpg" 
     },
     {
         "id": "VLHHIVY35ZYUXZODHPQ62SQG",
@@ -605,7 +605,7 @@
         "id": "SEITUGPQMM2KNGM6TZ3RG7UW",
         "name": "Grilled Chicken Salad",
         "price": "1495",
-        "image": "Grilled Chicken Garden.jpg"
+        "image": "/Grilled Chicken Garden.jpg"
     },
     {
         "id": "ZS3BJD22N4YCYXQTTNKJ22U6",
@@ -636,13 +636,13 @@
         "id": "7NC2VKOEIEE3B7ZDG3QUJT5A",
         "name": "Chef's Salad",
         "price": "1295",
-        "image": "Garden Salad.jpg"
+        "image": "/Garden Salad.jpg"
     },
     {
         "id": "NV65NSOJQWK562NXD5YCVQPZ",
         "name": "Steak Tip Salad",
         "price": "1995",
-        "image": "Steak on Caesar Salad.jpg"
+        "image": "/Steak on Caesar Salad.jpg"
     },
     {
         "id": "J55FLCJWUN5OMF3TGPXIJ6EV",
@@ -653,13 +653,13 @@
         "id": "JAMV6IPUHCOUFKUEYRABJUD3",
         "name": "Caesar Salad",
         "price": "995",
-        "image": "Ceasar Salad.jpg"
+        "image": "/Ceasar Salad.jpg"
     },
     {
         "id": "MTQUAKHMMZIYD2T7AMUSPROO",
         "name": "Grilled Chicken Caesar Salad",
         "price": "1695",
-        "image": "Grilled Chicken on Ceasar.jpg"
+        "image": "/Grilled Chicken on Ceasar.jpg"
     },
     {
         "id": "KRVHDK4BUTFQBKETJS7Q5OQ7",
@@ -904,7 +904,7 @@
         "price": "1195",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1195", "1495"],
-        "image": "Steak and Pepper Sub.jpg"
+        "image": "/Steak and Pepper Sub.jpg"
     },
     {
         "id": "XIHJRMDP2X767GCLVEQN57UW",
@@ -912,7 +912,7 @@
         "price": "1195",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1195", "1495"],
-        "image": "Steak and Mushroom Sub.jpg"
+        "image": "/Steak and Mushroom Sub.jpg"
     },
     {
         "id": "WHGY6QQ3Z5WFZP26PRD7ZBAN",
@@ -934,7 +934,7 @@
         "price": "1395",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1395", "1595"],
-        "image": "Loaded Steak Sub.jpg"
+        "image": "/Loaded Steak Sub.jpg"
     },
     {
         "id": "EDVO7YCK62RBBSBOKGSUOSQG",
@@ -949,13 +949,13 @@
         "id": "RTWVCD5NTOM3F5BYGTX3WTXR",
         "name": "Fish and Chips",
         "price": "1995",
-        "image": "Fish and Chips.jpg"
+        "image": "/Fish and Chips.jpg"
     },
     {
       "id": "V8WRZJQ7LNPXT4Y6CDF3KH2M",
       "name": "Fish Sandwich with French Fries",
       "price": "1595",
-      "image": "Fish Sandwich Plate.jpg"
+      "image": "/Fish Sandwich Plate.jpg"
     },
     {
         "id": "AJZLCV6TB5L6SICXL2GEELHL",
@@ -977,13 +977,13 @@
         "id": "G24V2XPESNAI7IQPTHIAD47M",
         "name": "Clam Strip Plate",
         "price": "2495",
-        "image": "Clam Strips.jpg"
+        "image": "/Clam Strips.jpg"
     },
     {
         "id": "DAANR4WEHPTK7ZSIGFJE6PWX",
         "name": "Shrimp Plate",
         "price": "2595",
-        "image": "Shrimp Combo Plate.jpg"
+        "image": "/Shrimp Combo Plate.jpg"
     },
     {
         "id": "Q7HZNBR2M3VHEODLZDGD7C3R",
@@ -1004,7 +1004,7 @@
         "id": "JAFZVL4CHU4ZNKC47KGAEJEF",
         "name": "Simco's Super Seafood Plate",
         "price": "3895",
-        "image": "Super Regular.jpg"
+        "image": "/Super Regular.jpg"
     },
     {
         "id": "SENVZPUEHMSL2SCPY74LMC4R",
@@ -1020,7 +1020,7 @@
         "id": "USMNLPKQDCZRBMV4SMN726S2",
         "name": "Clam Strip Roll",
         "price": "1695",
-        "image": "Clam Roll.jpg"
+        "image": "/Clam Roll.jpg"
     },
     {
         "id": "ZBHWDNN3FRLFWPCFSMWO6EO3",
@@ -1062,7 +1062,7 @@
         "price": "1495",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1495", "2195"],
-        "image": "Clam Strip Box.jpg"
+        "image": "/Clam Strip Box.jpg"
     },
     {
         "id": "ACE4FDGBHDZS3FLDSJ5IEU6C",
@@ -1070,7 +1070,7 @@
         "price": "2995",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["2995", "3995"],
-        "image": "Fried Scallops.jpg"
+        "image": "/Fried Scallops.jpg"
     },
     {
         "id": "UQ45WG76FPOFIE2C3ALUYP6M",
@@ -1078,7 +1078,7 @@
         "price": "1995",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1995", "3295"],
-        "image": "Shrimp Box.jpg"
+        "image": "/Shrimp Box.jpg"
     },
     {
         "id": "IKP4NDVHMHT45OR3UDWVJN2Y",
@@ -1086,7 +1086,7 @@
         "price": "695",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["695", "895"],
-        "image": "Fries Box.jpg"
+        "image": "/Fries Box.jpg"
     },
     {
         "id": "MRE2CPT4ZRB46ZJ2GBDLWBAN",
@@ -1094,7 +1094,7 @@
         "price": "695",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["695", "895"],
-        "image": "Onion Ring Box.jpg"
+        "image": "/Onion Ring Box.jpg"
     },
     {
         "id": "L4YIYTN46SHUM4TGBOALIALI",
@@ -1102,7 +1102,7 @@
         "price": "1395",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1395", "1795"],
-        "image": "Chicken Finger Box.jpg"
+        "image": "/Chicken Finger Box.jpg"
     },
     {
         "id": "BOGB5FKYYN3WLDTUSNUQRGC5",
@@ -1110,7 +1110,7 @@
         "price": "1395",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1395", "1795"],
-        "image": "Chicken Wing Box.jpg"
+        "image": "/Chicken Wing Box.jpg"
     },
     {
         "id": "6ABYG3UJAHD7MTQ2ZLF3SYZ4",
@@ -1118,7 +1118,7 @@
         "price": "1395",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1395", "1795"],
-        "image": "Buffalo Wing Box.jpg"
+        "image": "/Buffalo Wing Box.jpg"
     },
     {
         "id": "6B3F6TKYE6E3ZY3OIS3BWE7R",
@@ -1153,7 +1153,7 @@
         "price": "1595",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1595", "1995"],
-        "image": "Ribs.jpg"
+        "image": "/Ribs.jpg"
     },
     {
         "id": "GUAI72DLO3X5XBIPUQDSA6H2",
@@ -1168,7 +1168,7 @@
         "price": "1795",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1795", "2295"],
-        "image": "Fish Box.jpg"
+        "image": "/Fish Box.jpg"
     },
     {
         "id": "XWOYV6QN3QLTHXL7PHW3CQHF",
@@ -1211,7 +1211,7 @@
         "id": "G6BYMBR7UH5VR4APWW5EJL7N",
         "name": "Cheese Pizza Slice",
         "price": "250",
-        "image": "Slice Cheese.jpg"
+        "image": "/Slice Cheese.jpg"
     }
 ],
   "Desserts": [
@@ -1249,7 +1249,7 @@
           "Almond Joy",
           "Frozen Pudding"
         ],
-        "image": "Icrecream.jpg"
+        "image": "/Icrecream.jpg"
     },
     {
         "id": "I6T2UBLJPMCYSUB4W36MEHNK",
@@ -1261,7 +1261,7 @@
       "id": "P3KLMDX6QVHJT9W2CFG5SR8N",
       "name": "Banana Pudding",
       "price": "795",
-      "image": "Banana Pudding Plastic.jpg"
+      "image": "/Banana Pudding Plastic.jpg"
     },
     {
         "id": "WPVZY4XRWONEA6UE6HH3AEDG",
@@ -1343,7 +1343,7 @@
         "id": "GGHUXDXVCTRCSLKRZFLB3FFT",
         "name": "Pepsi",
         "price": "300",
-        "image": "Pepsi.jpg"
+        "image": "/Pepsi.jpg"
 
     },
     {
@@ -1355,19 +1355,19 @@
         "id": "T6BDBZCQYSN5FDEQTTR7WRP6",
         "name": "Ginger Ale",
         "price": "300",
-        "image": "Ginger Ale.jpg"
+        "image": "/Ginger Ale.jpg"
     },
     {
       "id": "X9TLQGZ5AVPMNW6JRSK2BV9E",
       "name": "Joe's Mango Tea",
       "price": "300",
-      "image": "Joes Mango.jpg"
+      "image": "/Joes Mango.jpg"
     },
     {
       "id": "H7JRDQK9BWXPFY3MVLZ8NT2C",
       "name": "Joe's Peach Tea",
       "price": "300",
-      "image": "Joes Peach Tea.jpg"
+      "image": "/Joes Peach Tea.jpg"
     },
     {
         "id": "PAZNALOCJGAUQJPGZ42C6RLJ",
@@ -1403,7 +1403,7 @@
         "id": "OVIJHVSTBYBXZG6TMGDZ7UJB",
         "name": "Root Beer",
         "price": "300",
-        "image": "Root Beer.jpg"
+        "image": "/Root Beer.jpg"
     },
     {
         "id": "FDS6EZZZR3UCYXRIOCZ6V6SO",

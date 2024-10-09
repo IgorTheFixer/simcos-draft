@@ -3,6 +3,8 @@ import Link from "next/link"
 
 import { cn } from "@/lib/utils"
 import { Category } from "@/types";
+import { SimcosButton } from "@/components/ui/SimcosButton";
+import { bevan, robotoCondensed } from "@/fonts";
 
 // interface SubNavProps {
 //   data: Category[];
@@ -35,30 +37,49 @@ const SubMainNav = () => {
       ))} */}
       <Link
           // key={route.href}
+          
           href="/menu"
-          className={cn(
-            'text-sm font-medium transition-colors hover:text-[#EBD6B7] text-black'
-          )}
+          // className={cn(
+          //   'text-sm font-medium transition-colors hover:text-[#EBD6B7] text-black'
+          // )}
         >
-          Menu
+          <SimcosButton
+            variant={"nav"}
+            size={'sm'}
+            className={bevan.className}
+          >
+            MENU
+          </SimcosButton>
       </Link>
       <Link
           // key={route.href}
           href="/login"
-          className={cn(
-            'text-sm font-medium transition-colors hover:text-[#EBD6B7] text-black'
-          )}
+          // className={cn(
+          //   'text-sm font-medium transition-colors hover:text-[#EBD6B7] text-black'
+          // )}
         >
-          Login
+          <SimcosButton
+            variant={"nav"}
+            size={'sm'}
+            className={bevan.className}
+          >
+            LOGIN
+          </SimcosButton>
       </Link>
       <Link
           // key={route.href}
           href="/signup"
-          className={cn(
-            'text-sm font-medium transition-colors hover:text-[#EBD6B7] text-black'
-          )}
+          // className={cn(
+          //   'text-sm font-medium transition-colors hover:text-[#EBD6B7] text-black'
+          // )}
         >
-          Signup
+          <SimcosButton
+            variant={"nav"}
+            size={'sm'}
+            className={bevan.className}
+          >
+            SIGNUP
+          </SimcosButton>
       </Link>
     </nav>
   )
