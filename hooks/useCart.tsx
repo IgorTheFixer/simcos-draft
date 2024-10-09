@@ -20,9 +20,9 @@ const useCart = create(
   calculateTotal: () =>{
     const currentItems = get().items
     const totalPrice = currentItems.reduce((total, item) => {
-      {/* @ts-ignore */}
+      //@ts-ignore 
       return total + Number(item.price)
-      {/* @ts-ignore */}
+      //@ts-ignore
     }, 0);
     set({ cartTotal: totalPrice })
   },
