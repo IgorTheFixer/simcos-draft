@@ -248,14 +248,31 @@ const Info: React.FC<InfoProps> = ({ data }) => {
       </>
     );
   };
+  const updatePriceBasedOnSize = (cartData: any) => {
+    // Check if the size exists and is valid
+    if (cartData.size && cartData.sizes && cartData.sizes.length > 0) {
+      const sizeIndex = cartData.sizes.indexOf(cartData.size);
+  
+      // If size is found in the sizes array, update the price
+      if (sizeIndex !== -1) {
+        cartData.price = cartData.sizesPrice[sizeIndex];
+      }
+    }
+  
+    return cartData;
+  };
 // @ts-ignore
   const onAddToCart = (formData: z.infer<typeof formSchema>) => {
     const uniqueId = uuidv4()
     const uniqueData = { ...formData, uniqueId: uniqueId }
     const cartData = { ...data, ...uniqueData, quantity };
+
+    // Update price based on the selected size before adding to the cart
+    const updatedCartData = updatePriceBasedOnSize(cartData)
+
     //CRUCIAL: this is where the unique keys are generated
     console.log("Information being sent to cart", cartData);
-    cart.addItem(cartData);
+    cart.addItem(updatedCartData);
   };
 
   return (

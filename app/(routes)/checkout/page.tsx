@@ -18,6 +18,8 @@ import { z } from "zod"
 import Summary from './components/Summary'
 import { useEffect } from "react";
 import useCart from "@/hooks/useCart";
+import { toast } from "react-hot-toast";
+import { useRouter } from 'next/navigation';
 
 
 const FormSchema = z.object({
@@ -33,8 +35,9 @@ const FormSchema = z.object({
 })
 
 export default function Checkout() {
-  
+  const router = useRouter();
   const cartTotal = useCart((state) => state.cartTotal);
+  const finalAmount = useCart((state) => state.finalAmount);
   const items = useCart((state) => state.items);
   // Replace with your application ID and location ID
   // const appId = process.env.SQUARE_APPLICATION_ID;
@@ -118,16 +121,17 @@ export default function Checkout() {
       ...(item.size && { variationName: item.size }),
       modifiers,
       basePriceMoney: {
-        amount: price,
+        // amount: price,
+        amount: item.price,
         currency: 'USD',
       },
     };
   });
   console.log("Line Items Array",lineItems)
 
-  const finalPrice = lineItems.reduce((total, item) => {
-    return total + Number(item.basePriceMoney.amount)
-  }, 0)
+  // const finalPrice = lineItems.reduce((total, item) => {
+  //   return total + Number(item.basePriceMoney.amount)
+  // }, 0)
 
   return (
     <Container>
@@ -183,11 +187,20 @@ export default function Checkout() {
           if (isValid) {
             const formData = form.getValues();
             onSubmit(formData);
-            const result = await submitPayment(token.token, finalPrice, lineItems);
-            // const orderResult = await submitOrder()
-            console.log("Payment result:", result);
-            // console.log("Order Result", orderResult);
+            const result = await submitPayment(token.token, finalAmount, lineItems);
+            if (result){
+              // const orderResult = await submitOrder()
+              console.log("Payment result:", result);
+              router.push('/confirmation')
+              toast.success('Payment Successful!');
+              // console.log("Order Result", orderResult);
+            } else {
+              console.log("Error with payment result");
+              toast.error('Please review your submission')
+            }
+            
           } else {
+            toast.error('Please review your submission')
             console.log("Form validation failed");
           }
         }}

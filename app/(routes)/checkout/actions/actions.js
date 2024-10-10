@@ -50,18 +50,24 @@ export async function submitOrder(lineItems){
     const { result } = await ordersApi.createOrder({
       order: {
         locationId: 'L26Y90P0YB65A',
-        lineItems: lineItems
+        lineItems: lineItems,
+        taxes: [
+          {
+            name: 'Sales Tax',
+            percentage: '6.25'
+          }
+        ],
       },
       idempotencyKey: randomUUID()
     });
-    
+    console.log(result.order)
     return result.order.id
   } catch(error) {
     console.log(error);
   }
 }
 
-export async function submitPayment(sourceId, cartTotal, lineItems) {
+export async function submitPayment(sourceId, finalAmount, lineItems) {
   try {
     // const orderId = await createOrderForChickenSub(locationId);
     const orderId = await submitOrder(lineItems)
@@ -71,7 +77,7 @@ export async function submitPayment(sourceId, cartTotal, lineItems) {
       sourceId,
       amountMoney: {
         currency: "USD",
-        amount: cartTotal
+        amount: Math.round(finalAmount)
       },
       orderId
     });

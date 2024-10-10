@@ -13,6 +13,8 @@ import Link from "next/link";
 const Summary = () => {
   const searchParams = useSearchParams();
   const cartTotal = useCart((state) => state.cartTotal);
+  const taxAmount = useCart((state) => state.taxAmount)
+  const finalAmount = useCart((state) => state.finalAmount)
   const items = useCart((state) => state.items);
   const removeAll = useCart((state) => state.removeAll);
 
@@ -39,7 +41,7 @@ const Summary = () => {
 
   //   window.location = response.data.url;
   // }
-
+console.log(taxAmount)
   return ( 
     <div
       className="mt-16 rounded-lg bg-gray-50 px-4 py-6 sm:p-6 lg:col-span-5 lg:mt-0 lg:p-8"
@@ -49,9 +51,23 @@ const Summary = () => {
       </h2>
       <div className="mt-6 space-y-4">
         <div className="flex items-center justify-between border-t border-gray-200 pt-4">
-          <div className="text-base font-medium text-gray-900">Order total</div>
+          <div className="text-base font-medium text-gray-900">Cart total</div>
           {/* TODO:Pull cartTotal from global state */}
          <Currency value={cartTotal} />
+        </div>
+      </div>
+      <div className="mt-6 space-y-4">
+        <div className="flex items-center justify-between border-t border-gray-200 pt-4">
+          <div className="text-base font-medium text-gray-900">Sales Tax</div>
+          {/* TODO:Pull cartTotal from global state */}
+         <Currency value={taxAmount} />
+        </div>
+      </div>
+      <div className="mt-6 space-y-4">
+        <div className="flex items-center justify-between border-t border-gray-200 pt-4">
+          <div className="text-base font-medium text-gray-900">Order total</div>
+          {/* TODO:Pull cartTotal from global state */}
+         <Currency value={finalAmount} />
         </div>
       </div>
       <Link href="/checkout">
