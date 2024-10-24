@@ -5,7 +5,7 @@ const PreviewImage = ({data}) =>{
     <div className="sm:col-span-4 lg:col-span-5">
           <div className="flex flex-col-reverse">
             <div className="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
-              <div className="aspect-square relative bg-gray-600 h-full w-full sm:rounded-lg overflow-hidden">
+              <div className="aspect-square relative bg-white h-full w-full sm:rounded-lg overflow-hidden">
                 {data.image && 
                   <Image 
                     src={data.image}

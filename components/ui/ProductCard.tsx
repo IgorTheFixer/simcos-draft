@@ -44,7 +44,7 @@ const ProductCard: React.FC<ProductCard> = ({
     <div onClick={onPreview} className="bg-white group cursor-pointer rounded-xl border p-3 space-x-4 relative flex min-w-fit">
       <div className="grid grid-cols-3 gap-4 w-full">
         {/* Image */}
-        <div className="min-w-24 min-h-24 h-24 w-24 aspect-square rounded-xl bg-gray-100 relative">
+        <div className="min-w-24 min-h-24 h-24 w-24 aspect-square rounded-xl bg-white relative">
           {data.image && (
               <Image
                 src={data.image}

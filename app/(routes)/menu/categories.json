@@ -534,7 +534,8 @@
         "name": "Chicken Cutlet Calzone",
         "price": "1695",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1695", "2595"]
+        "sizesPrice": ["1695", "2595"],
+        "image": "/Chicken Cutlet Sandwhich.png"
     },
     {
         "id": "OVLV7LHVRLREK2TRCNXQFXX2",
@@ -687,7 +688,8 @@
         "price": "995",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["995", "1195"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/Meatless Sub.png"
     },
     {
         "id": "YRTOQLR3NEXG3TJPX3DRTTZX",
@@ -695,7 +697,8 @@
         "price": "995",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1095", "1195"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/Bologna Sub.png"
     },
     {
         "id": "LK5ILLS53AKG5ZF7D7QZVA63",
@@ -703,7 +706,8 @@
         "price": "1195",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1195", "1395"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/Pastrami Sub.png"
     },
     {
         "id": "FALAAN3LJ4GUOJHWD2RU3P5A",
@@ -711,7 +715,8 @@
         "price": "1095",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1095", "1295"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/Mortadella Sub.png"
     },
     {
         "id": "IFUEFL326ABSAVMCKHFNBBZP",
@@ -719,7 +724,8 @@
         "price": "1095",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1095", "1295"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/American Sub.png"
     },
     {
         "id": "D7U6WLDTBVAGBFWCKE2F3MLF",
@@ -736,7 +742,8 @@
         "price": "1095",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1095", "1295"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/Roast Beef Sub.png"
     },
     {
         "id": "BAMU73BW73JTPCBCBK4HUJXU",
@@ -762,7 +769,8 @@
         "price": "1195",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1195", "1395"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/BLT Sandwich.png"
     },
     {
         "id": "A2YUALVLBQFP2V2RPUS7E6RP",
@@ -770,7 +778,8 @@
         "price": "1095",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1095", "1195"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/Tunafish Sub.png"
     },
     {
         "id": "O34ZV62KDII5NX2IOFAHRF6Z",
@@ -787,7 +796,8 @@
         "price": "1095",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1095", "1295"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/Crab Salad.jpg"
     },
     {
         "id": "EJ75MRTOMZDTPW4BUMXPIHB5",
@@ -795,7 +805,8 @@
         "price": "1095",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1095", "1295"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/Pepper and Egg Sub.png"
     },
     {
         "id": "5SQCFPJHXBU3NMNPHEYKRY6R",
@@ -803,7 +814,8 @@
         "price": "1195",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1195", "1395"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/Meatball Sub.jpg"
     },
     {
         "id": "F2L4EPA263GTREUEDJGMRQC7",
@@ -811,7 +823,8 @@
         "price": "1195",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1195", "1395"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/Chicken Cutlet Sandwhich.png"
     },
     {
         "id": "QGRQSZ2PXI5OGVHHAXLFW4LZ",
@@ -819,7 +832,8 @@
         "price": "1195",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1195", "1395"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/Veal Cutlet Sandwhich.png"
     },
     {
         "id": "6NQONT6RYZV7LIVGVKNHADZK",
@@ -827,7 +841,8 @@
         "price": "1195",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1195", "1395"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/Sausage Sub.png"
     },
     {
         "id": "TFGC4VK7ZURXX2YRRW67PFAJ",
@@ -835,7 +850,8 @@
         "price": "1195",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1195", "1395"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/Ham and Egg Sub.png"
     },
     {
         "id": "UCHSUSI2IJQKCRBZBVOHPMVP",
@@ -843,7 +859,8 @@
         "price": "1095",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1095", "1295"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/Hamburger Sub.png"
     },
     {
         "id": "PVS6ESHXDGT6333IXSQSSRT6",
@@ -851,7 +868,8 @@
         "price": "1095",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1095", "1295"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/Cheeseburger Sub.png"
     },
     {
         "id": "2IEXOCI46FEK6AKYKHUVU5EL",
@@ -859,7 +877,8 @@
         "price": "1195",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1195", "1395"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/Grilled Chicken Sub.png"
     },
     {
         "id": "5UTDEXMGWCNRTLGLDLUQU73Q",
@@ -867,7 +886,8 @@
         "price": "1495",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1495", "1795"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/Steak Tip Sub.png"
     },
     {
         "id": "ORBZUJ532NO2A5SDBCWTA7YD",
@@ -875,7 +895,8 @@
         "price": "1095",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1095", "1295"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/Chicken Salad Sub.jpg"
     },
     {
         "id": "JNCL5AMQ55MAAWMGPDCC7P56",
@@ -883,7 +904,8 @@
         "price": "1195",
         "sizes": ["Small", "Large"],
         "sizesPrice": ["1195", "1395"],
-        "substitutions":["Pita Bread", "Syrian Bread"]
+        "substitutions":["Pita Bread", "Syrian Bread"],
+        "image": "/Chicken Parm Sub.png"
     }
 ],
   "Steak Subs": [

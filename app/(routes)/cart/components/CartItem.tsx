@@ -32,7 +32,7 @@ console.log("CART INFO", data)
   return ( 
     <li className="flex py-6 border-b">
       {/* Image */}
-      <div className="relative h-24 w-24 rounded-md bg-gray-600 overflow-hidden sm:h-48 sm:w-48">
+      <div className="relative h-24 w-24 rounded-md bg-white overflow-hidden sm:h-48 sm:w-48">
         {data.image && 
           <Image
           fill

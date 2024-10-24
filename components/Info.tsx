@@ -13,6 +13,7 @@ import QuantitySelector from "./ui/QuantitySelector";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import usePreviewModal from "@/hooks/usePreviewModal";
 
 import {
   Form,
@@ -53,6 +54,7 @@ interface InfoProps {
 const Info: React.FC<InfoProps> = ({ data }) => {
   const cart = useCart();
   const [quantity, setQuantity] = useState(1);
+  const previewModal = usePreviewModal();
 
   const handleQuantityChange = (newQuantity) => {
     setQuantity(newQuantity);
@@ -273,6 +275,7 @@ const Info: React.FC<InfoProps> = ({ data }) => {
     //CRUCIAL: this is where the unique keys are generated
     console.log("Information being sent to cart", cartData);
     cart.addItem(updatedCartData);
+    previewModal.onClose()
   };
 
   return (
