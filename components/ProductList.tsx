@@ -25,8 +25,16 @@ const ProductList: React.FC<ProductListProps> = ({
       </AccordionTrigger>
       <AccordionContent>
         {items.length === 0 && <NoResults />}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {items.map((item) => {
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+          {items
+          .sort((a,b) =>{
+
+            const hasImageA = a.image ? 1 : 0;
+            const hasImageB = b.image ? 1 : 0;
+    
+            return hasImageB - hasImageA;
+          })
+          .map((item) => {
             // const uniqueId = uuidv4()
             // const itemWithId = { ...item, uniqueId: uniqueId }
             return(
