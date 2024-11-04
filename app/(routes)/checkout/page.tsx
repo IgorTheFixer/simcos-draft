@@ -36,6 +36,7 @@ const FormSchema = z.object({
 
 export default function Checkout() {
   const router = useRouter();
+  const cart = useCart()
   const cartTotal = useCart((state) => state.cartTotal);
   const finalAmount = useCart((state) => state.finalAmount);
   const items = useCart((state) => state.items);
@@ -193,6 +194,7 @@ export default function Checkout() {
               console.log("Payment result:", result);
               router.push('/confirmation')
               toast.success('Payment Successful!');
+              cart.removeAll()
               // console.log("Order Result", orderResult);
             } else {
               console.log("Error with payment result");

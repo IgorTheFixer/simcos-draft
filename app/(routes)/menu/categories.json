@@ -90,11 +90,6 @@
         "id": "2JHPBANFM3ICMGIVSQMW6A64",
         "name": "BBQ Half Chicken",
         "price": "2195"
-    },
-    {
-        "id": "KAHH7WONKNFZAM5ARLG5X56H",
-        "name": "Buffalo Finger Dinner",
-        "price": "1895"
     }
 ],
   "Soups": [
@@ -113,7 +108,8 @@
     {
         "id": "NYKIVBNELCRYJLNDNZI6WAQC",
         "name": "Chicken Gumbo",
-        "price": "600"
+        "price": "600",
+        "image": "/tortilla soup.png"
     }
 ],
   "Wraps": [
@@ -146,17 +142,12 @@
     },
     {
         "id": "ZZIOMU4TURM6EZI7AEZID445",
-        "name": "Chicken Caesar Wrap",
+        "name": "Caesar Wrap",
         "price": "1395"
     },
     {
         "id": "CCTM7X7DQ4QHSBXAASQ4HF2D",
         "name": "Steak Tips Wrap",
-        "price": "1795"
-    },
-    {
-        "id": "DXINSQQNK3BXFKBX2WOTD5FA",
-        "name": "Fish Wrap",
         "price": "1795"
     }
 ],
@@ -246,7 +237,7 @@
         "name": "Turkey Burger",
         "price": "895",
         "toppings": ["mustard", "ketchup", "onion", "relish"],
-        "image": "/turkey burger.png"
+        "image": "/Small Turkey Burger.png"
     },
     {
         "id": "VXW3UW2L6XQEKEQT6ILPGKGI",
@@ -323,11 +314,10 @@
     },
     {
         "id": "MWA562DB5ZEOPOEH2FSS5LHJ",
-        "name": "Cheeseburger with French Fries",
-        "price": "1395",
+        "name": "Cheeseburger",
+        "price": "895",
         "toppings": ["mustard", "ketchup", "onion", "relish"],
-        "preparation": ["Rare", "Medium Rare", "Medium", "Medium Well", "Well Done"],
-        "image":"/Cheeseburger and Fries.jpg"
+        "preparation": ["Rare", "Medium Rare", "Medium", "Medium Well", "Well Done"]
     }
 ],
   "Pizza": [
@@ -351,7 +341,7 @@
         "name": "Pepper Pizza",
         "price": "1195",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1195", "1595"] 
+        "sizesPrice": ["1195", "1495"] 
     },
     {
         "id": "7UQ6LJUBF7F24HU6EDU2M2GI",
@@ -365,14 +355,14 @@
         "name": "Salami Pizza",
         "price": "1195",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1195", "1595"] 
+        "sizesPrice": ["1195", "1695"] 
     },
     {
         "id": "EJWIJSJA5G2FNLEJT7VXDCMH",
         "name": "Pepperoni Pizza",
         "price": "1195",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1195", "1595"],
+        "sizesPrice": ["1195", "1695"],
         "image": "/Pepperoni-Pizza.jpg" 
     },
     {
@@ -380,49 +370,49 @@
         "name": "Sausage Pizza",
         "price": "1195",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1195", "1595"] 
+        "sizesPrice": ["1195", "1695"] 
     },
     {
         "id": "DGQSLG5FFIQGNV6CMEQ52LND",
         "name": "Anchovies Pizza",
         "price": "1195",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1195", "1595"] 
+        "sizesPrice": ["1195", "1495"] 
     },
     {
         "id": "BE7QSJR74JESY7CWLG2OVCN6",
         "name": "Onion and Pepper Pizza",
         "price": "1295",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1195", "1595"] 
+        "sizesPrice": ["1295", "1695"] 
     },
     {
         "id": "EJKPCJZZDWOSQ4CHVKBHGNZ6",
         "name": "Mushroom Pizza",
         "price": "1195",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1195", "1595"] 
+        "sizesPrice": ["1195", "1495"] 
     },
     {
         "id": "UWS52PE57MPMU4JVMF6XQTT2",
         "name": "Ham Pizza",
         "price": "1195",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1195", "1595"] 
+        "sizesPrice": ["1195", "1495"] 
     },
     {
         "id": "5UA66DWDKEOEKOSX5EY3R23Q",
         "name": "Bacon Pizza",
         "price": "1195",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1195", "1595"] 
+        "sizesPrice": ["1195", "1695"] 
     },
     {
         "id": "5KHM2GGKCLXFNSNG3TW7XVKO",
         "name": "Pastrami Pizza",
         "price": "1395",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1195", "1595"] 
+        "sizesPrice": ["1395", "1895"] 
     },
     {
         "id": "5GBGAQKR2NEAQAMAACGIMYPW",
@@ -460,23 +450,23 @@
         "name": "4 Way Combo Pizza",
         "price": "1595",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1595", "2195"],
+        "sizesPrice": ["1595", "1995"],
         "toppings":["Onion","Pepper","Meatball","Salami","Pepperoni","Sausage","Anchovies","Mushroom","Ham","Bacon","Pastrami","Pineapple", "Grilled Chicken"],
         "toppingsNumber": 4
     },
     {
         "id": "R5S2N6ETPLPVMEJXMFI6FLL6",
         "name": "Special Pizza",
-        "price": "1695",
+        "price": "1595",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1695", "2495"]
+        "sizesPrice": ["1595", "2495"]
     },
     {
         "id": "X556RGHJQMGCRMVXFVTEPSN5",
         "name": "Extra Special Pizza",
-        "price": "1795",
+        "price": "1595",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1795", "2595"]
+        "sizesPrice": ["1595", "1995"]
     },
     {
         "id": "A4KNYYUAE6EFBL4WS54FEN4Z",
@@ -513,7 +503,7 @@
         "name": "Jambalaya Calzone",
         "price": "1695",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1595", "2395"]
+        "sizesPrice": ["1695", "2395"]
     },
     {
         "id": "YO5OLM3QQVTCGAP5DAJ4PB3H",
@@ -534,8 +524,7 @@
         "name": "Chicken Cutlet Calzone",
         "price": "1695",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1695", "2595"],
-        "image": "/Chicken Cutlet Sandwhich.png"
+        "sizesPrice": ["1695", "2595"]
     },
     {
         "id": "OVLV7LHVRLREK2TRCNXQFXX2",
@@ -555,9 +544,9 @@
     {
         "id": "GFW7O2AUET5II6WPGFOEJR6Y",
         "name": "Steak and Cheese Calzone",
-        "price": "1295",
+        "price": "1695",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1295", "1795"],
+        "sizesPrice": ["1695", "2595"],
         "image": "/Edited_Steak&CheeseCalzone.png"
     },
     {
@@ -565,7 +554,7 @@
         "name": "Steak Tip Calzone",
         "price": "1795",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1795", "2695"]
+        "sizesPrice": ["1795", "2595"]
     },
     {
         "id": "4AJZWIY3MHSNL2DKA4THR3FH",
@@ -685,9 +674,9 @@
     {
         "id": "3XN6WCODL6NUVDVYQNMXQD4G",
         "name": "Meatless Sub",
-        "price": "995",
+        "price": "895",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["995", "1195"],
+        "sizesPrice": ["895", "1095"],
         "substitutions":["Pita Bread", "Syrian Bread"],
         "image": "/Meatless Sub.png"
     },
@@ -696,7 +685,7 @@
         "name": "Bologna Sub",
         "price": "995",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1095", "1195"],
+        "sizesPrice": ["995", "1195"],
         "substitutions":["Pita Bread", "Syrian Bread"],
         "image": "/Bologna Sub.png"
     },
@@ -712,108 +701,108 @@
     {
         "id": "FALAAN3LJ4GUOJHWD2RU3P5A",
         "name": "Mortadella Sub",
-        "price": "1095",
+        "price": "995",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1095", "1295"],
+        "sizesPrice": ["995", "1195"],
         "substitutions":["Pita Bread", "Syrian Bread"],
         "image": "/Mortadella Sub.png"
     },
     {
         "id": "IFUEFL326ABSAVMCKHFNBBZP",
         "name": "American Sub",
-        "price": "1095",
+        "price": "995",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1095", "1295"],
+        "sizesPrice": ["995", "1195"],
         "substitutions":["Pita Bread", "Syrian Bread"],
         "image": "/American Sub.png"
     },
     {
         "id": "D7U6WLDTBVAGBFWCKE2F3MLF",
         "name": "Italian Sub",
-        "price": "1095",
+        "price": "995",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1095", "1295"],
+        "sizesPrice": ["995", "1195"],
         "substitutions":["Pita Bread", "Syrian Bread"],
         "image": "/Edited_ItalianSub.png"
     },
     {
         "id": "V4AT6LZDEYFH5VF5KQN6YJK2",
         "name": "Roast Beef Sub",
-        "price": "1095",
+        "price": "995",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1095", "1295"],
+        "sizesPrice": ["995", "1195"],
         "substitutions":["Pita Bread", "Syrian Bread"],
         "image": "/Roast Beef Sub.png"
     },
     {
         "id": "BAMU73BW73JTPCBCBK4HUJXU",
         "name": "Ham and Cheese Sub",
-        "price": "1095",
+        "price": "995",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1095", "1295"],
+        "sizesPrice": ["995", "1195"],
         "substitutions":["Pita Bread", "Syrian Bread"],
         "image": "/Edited_Ham&CheeseSub.png"
     },
     {
         "id": "XKHGST7P57DT5XQEHMOJPS62",
         "name": "Turkey Sub",
-        "price": "1095",
+        "price": "995",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1095", "1295"],
+        "sizesPrice": ["995", "1195"],
         "substitutions":["Pita Bread", "Syrian Bread"],
         "image": "/Edited_TurkeySub.png"
     },
     {
         "id": "CGDVPRMVAVISWE56ODPIUJJP",
         "name": "B.L.T. Sub",
-        "price": "1195",
+        "price": "1095",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1195", "1395"],
+        "sizesPrice": ["1095", "1295"],
         "substitutions":["Pita Bread", "Syrian Bread"],
         "image": "/BLT Sandwich.png"
     },
     {
         "id": "A2YUALVLBQFP2V2RPUS7E6RP",
         "name": "Tuna Sub",
-        "price": "1095",
+        "price": "995",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1095", "1195"],
+        "sizesPrice": ["995", "1195"],
         "substitutions":["Pita Bread", "Syrian Bread"],
         "image": "/Tunafish Sub.png"
     },
     {
         "id": "O34ZV62KDII5NX2IOFAHRF6Z",
         "name": "Fish Sub",
-        "price": "1295",
+        "price": "1195",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1295", "1495"],
+        "sizesPrice": ["1195", "1495"],
         "substitutions":["Pita Bread", "Syrian Bread"],
         "image": "/fish roll.png"
     },
     {
         "id": "UGS7MNXGHRTMIRCM47AJVM6F",
         "name": "Crabmeat Sub",
-        "price": "1095",
+        "price": "995",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1095", "1295"],
+        "sizesPrice": ["995", "1195"],
         "substitutions":["Pita Bread", "Syrian Bread"],
         "image": "/Crab Salad.jpg"
     },
     {
         "id": "EJ75MRTOMZDTPW4BUMXPIHB5",
         "name": "Pepper and Egg Sub",
-        "price": "1095",
+        "price": "995",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1095", "1295"],
+        "sizesPrice": ["995", "1195"],
         "substitutions":["Pita Bread", "Syrian Bread"],
         "image": "/Pepper and Egg Sub.png"
     },
     {
         "id": "5SQCFPJHXBU3NMNPHEYKRY6R",
         "name": "Meatball Sub",
-        "price": "1195",
+        "price": "1095",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1195", "1395"],
+        "sizesPrice": ["1095", "1295"],
         "substitutions":["Pita Bread", "Syrian Bread"],
         "image": "/Meatball Sub.jpg"
     },
@@ -822,7 +811,7 @@
         "name": "Chicken Cutlet Sub",
         "price": "1195",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1195", "1395"],
+        "sizesPrice": ["1195", "1495"],
         "substitutions":["Pita Bread", "Syrian Bread"],
         "image": "/Chicken Cutlet Sandwhich.png"
     },
@@ -847,9 +836,9 @@
     {
         "id": "TFGC4VK7ZURXX2YRRW67PFAJ",
         "name": "Ham and Egg Sub",
-        "price": "1195",
+        "price": "1095",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1195", "1395"],
+        "sizesPrice": ["1095", "1295"],
         "substitutions":["Pita Bread", "Syrian Bread"],
         "image": "/Ham and Egg Sub.png"
     },
@@ -876,7 +865,7 @@
         "name": "Grilled Chicken Sub",
         "price": "1195",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1195", "1395"],
+        "sizesPrice": ["1195", "1495"],
         "substitutions":["Pita Bread", "Syrian Bread"],
         "image": "/Grilled Chicken Sub.png"
     },
@@ -914,7 +903,7 @@
         "name": "Steak and Cheese Sub",
         "price": "1195",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1295", "1495"],
+        "sizesPrice": ["1195", "1495"],
         "image": "/steak and cheese edit.png"
     },
     {
@@ -957,17 +946,17 @@
     {
         "id": "44OGTYZ3XRM4W4KXBC6565LW",
         "name": "Steak Combo Sub",
-        "price": "1395",
+        "price": "1295",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1395", "1595"],
+        "sizesPrice": ["1295", "1595"],
         "image": "/Loaded Steak Sub.png"
     },
     {
         "id": "EDVO7YCK62RBBSBOKGSUOSQG",
         "name": "Steak and Chicken Mix Sub",
-        "price": "1395",
+        "price": "1295",
         "sizes": ["Small", "Large"],
-        "sizesPrice": ["1395", "1695"]
+        "sizesPrice": ["1295", "1595"]
     }
 ],
   "Fresh Seafood": [
@@ -1237,7 +1226,7 @@
     {
         "id": "G6BYMBR7UH5VR4APWW5EJL7N",
         "name": "Cheese Pizza Slice",
-        "price": "250",
+        "price": "295",
         "image": "/Slice Cheese.jpg"
     }
 ],

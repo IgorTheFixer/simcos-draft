@@ -61,7 +61,7 @@ const HomePage = async () => {
                       size={'nav'}
                       className={bevan.className}
                     >
-                      PICKUP
+                      CURBSIDE PICKUP
                     </SimcosButton>
                   </Link>
                   <Link href="https://order.online/online-ordering/business/simcos-171605?delivery=true">
@@ -70,7 +70,16 @@ const HomePage = async () => {
                       size={'nav'}
                       className={bevan.className}
                     >
-                      DELIVERY
+                      DoorDash
+                    </SimcosButton>
+                  </Link>
+                  <Link href="https://www.order.store/store/simcos-mattapan/2OY8MOdrRiGLoouS13ziQg">
+                    <SimcosButton
+                      variant={"simcos"}
+                      size={'nav'}
+                      className={bevan.className}
+                    >
+                      UberEats
                     </SimcosButton>
                   </Link>
                 </div>

@@ -11,6 +11,7 @@ interface CartStore {
   calculateFinal: () => void;
   taxAmount: Number | any;
   addItem: (data: any) => void;
+  updateItem: (data: any, newQuantity: number) => void;
   removeItem: (id: string) => void;
   removeAll: () => void;
   cartTotal: Number | any;
@@ -33,7 +34,7 @@ const useCart = create(
     const currentItems = get().items
     const totalPrice = currentItems.reduce((total, item) => {
       //@ts-ignore 
-      return total + Number(item.price)
+      return total + (Number(item.price) * item.quantity)
       //@ts-ignore
     }, 0);
     set({ cartTotal: totalPrice })
@@ -43,9 +44,20 @@ const useCart = create(
     const taxAmount = cartTotal * 0.0625
     set({ taxAmount: taxAmount})
   },
+  updateItem: (data: any, newQuantity: number) => {
+    console.log("Information to be updated",data)
+    const uniqueId = data.uniqueId
+    const newData = {...data, quantity: newQuantity}
+    set({ items: [...get().items.filter((item) => item.uniqueId !== uniqueId)] });
+    const currentItems = get().items;
+    set({ items: [...currentItems, newData] });
+    get().calculateTotal();  // Recalculate total after adding
+    get().calculateTax()
+    get().calculateFinal()
+    toast.success('Item Updated!');   
+  },
   addItem: (data: any) => {
-    //TODO:Add a loop to count for the quantity of the item
-    //check the quantity first on the type:Product object, then add the item x times
+    console.log(data)
     const currentItems = get().items;
     const existingItem = currentItems.find((item) => item.id === data.id);
     console.log(existingItem)
@@ -54,7 +66,7 @@ const useCart = create(
     //   return toast('Item already in cart.');
     // }
 
-    set({ items: [...get().items, data] });
+    set({ items: [...currentItems, data] });
     toast.success('Item added to cart.');
     get().calculateTotal();  // Recalculate total after adding
     get().calculateTax()

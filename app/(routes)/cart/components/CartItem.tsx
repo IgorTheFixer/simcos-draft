@@ -6,6 +6,7 @@ import Currency from "@/components/ui/Currency";
 {/* @ts-ignore */}
 import useCart from "@/hooks/useCart";
 import { Product } from "@/types";
+// import { useState } from "react";
 
 
 interface CartItemProps {
@@ -16,6 +17,12 @@ const CartItem: React.FC<CartItemProps> = ({
   data
 }) => {
   const cart = useCart();
+
+  // const [edit, setEdit ] = useState(false)
+
+  // const handleEdit = ()=>{
+  //   setEdit(true)
+  // }
 
   const filterEmptyValues = (obj) => {
     return Object.fromEntries(
@@ -47,20 +54,27 @@ console.log("CART INFO", data)
           <IconButton onClick={onRemove} icon={<X size={15} />} />
         </div>
         <div className="relative pr-9 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:pr-0">
-          <div className="flex justify-between">
+          <div className="flex flex-col justify-between">
             <p className=" text-lg font-semibold text-black">
             {/* @ts-ignore */}
               {cleanedData.name}
             </p>
-          </div>
-
-          {/* INFO ABOUT ITEM */}
+            {/* @ts-ignore */}
+            <Currency value={cleanedData.price * cleanedData.quantity} />
+            {/* INFO ABOUT ITEM */}
           <div className="mt-1 flex text-sm">
-            {/* <p className="text-gray-500">Blue</p> */}
+             {/* @ts-ignore */}
+            <p className="text-gray-500">Quantity: {cleanedData?.quantity}</p>
              {/* @ts-ignore */}
             <p className="ml-4 border-l border-gray-200 pl-4 text-gray-500">{cleanedData?.size}</p>
+            {/* @ts-ignore */}
+            {/* <p onClick={handleEdit} className="text-blue-700 underline">Edit Quantity</p> */}
           </div>
-          <Currency value={cleanedData.price} />
+          {/* TODO:neeed to add form to collect new quantity, maybe just reuse Info Modal */}
+          {/* {edit && <div className="relative pr-9 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:pr-0">
+            hi
+          </div>} */}
+          </div>
         </div>
         <div className="relative pr-9 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:pr-0">
           {cleanedData.toppings && (

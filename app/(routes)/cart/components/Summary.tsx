@@ -49,6 +49,12 @@ console.log(taxAmount)
       <h2 className="text-lg font-medium text-gray-900">
         Order summary
       </h2>
+      {items.map((item) =>{
+        return <div className="flex justify-between">
+            <p>{item.name} x{item.quantity}:</p>
+            <Currency value={item.price * item.quantity}/>
+          </div>
+      })}
       <div className="mt-6 space-y-4">
         <div className="flex items-center justify-between border-t border-gray-200 pt-4">
           <div className="text-base font-medium text-gray-900">Cart total</div>

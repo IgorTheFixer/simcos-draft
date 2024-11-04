@@ -27,6 +27,7 @@ import {
 import { Checkbox } from "@/components/ui/checkbox";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { v4 as uuidv4 } from 'uuid'
+import { Input } from "./ui/input";
 
 const createFormSchema = (toppingsNumber: number, requiresSize: boolean, requiresFlavor: boolean, requiresPreparation: boolean) => {
   return z.object({
@@ -56,11 +57,6 @@ const Info: React.FC<InfoProps> = ({ data }) => {
   const [quantity, setQuantity] = useState(1);
   const previewModal = usePreviewModal();
 
-  const handleQuantityChange = (newQuantity) => {
-    setQuantity(newQuantity);
-    // You can also handle additional logic here, like updating the cart
-  };
-
   const toppingsNumber = data?.toppingsNumber || 0;
   const requiresSize = !!data?.sizes?.length;
   const requiresFlavor = !!data?.flavors?.length;
@@ -79,6 +75,13 @@ const Info: React.FC<InfoProps> = ({ data }) => {
     },
   });
   console.log(data);
+
+  // Function to handle increment/decrement
+  const handleQuantityChange = (change: number) => {
+    const currentQuantity = form.getValues("quantity");
+    const newQuantity = Math.max(1, currentQuantity + change); // ensure at least 1
+    form.setValue("quantity", newQuantity);
+  };
 
   //Steps
   // iterate over the toppings if there are any and make them Radio Checkboxes
@@ -267,7 +270,7 @@ const Info: React.FC<InfoProps> = ({ data }) => {
   const onAddToCart = (formData: z.infer<typeof formSchema>) => {
     const uniqueId = uuidv4()
     const uniqueData = { ...formData, uniqueId: uniqueId }
-    const cartData = { ...data, ...uniqueData, quantity };
+    const cartData = { ...data, ...uniqueData};
 
     // Update price based on the selected size before adding to the cart
     const updatedCartData = updatePriceBasedOnSize(cartData)
@@ -389,6 +392,40 @@ const Info: React.FC<InfoProps> = ({ data }) => {
               </FormItem>
             )}
           />
+          <FormField
+              control={form.control}
+              name="quantity"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="font-semibold text-base text-black">
+                    Quantity
+                  </FormLabel>
+                  <div className="flex items-center gap-x-2">
+                    <Button
+                      type="button"
+                      onClick={() => handleQuantityChange(-1)}
+                      className="px-3 py-1"
+                    >
+                      -
+                    </Button>
+                    <Input
+                      type="number"
+                      {...field}
+                      readOnly
+                      className="w-12 text-center"
+                    />
+                    <Button
+                      type="button"
+                      onClick={() => handleQuantityChange(1)}
+                      className="px-3 py-1"
+                    >
+                      +
+                    </Button>
+                  </div>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
           <div className="mt-5 flex items-center gap-x-3">
             {/* <QuantitySelector
               initialQuantity={quantity}
