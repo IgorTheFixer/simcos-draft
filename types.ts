@@ -10,7 +10,8 @@ export interface Product {
   modifiers?: Array<Object>;
   sizeOptions?: Array<Object>
   uniqueId?: string;
-  quantity?: number
+  quantity?: number;
+  image?: string;
 };
 
 export interface Image {

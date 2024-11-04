@@ -18,6 +18,7 @@ const ProductList: React.FC<ProductListProps> = ({
   title,
   items
 }) => {
+  console.log("Product List log", items)
   return (
     <AccordionItem value={title} className="space-y-4">
       <AccordionTrigger>
