@@ -64,26 +64,26 @@ export default function MenuPage(){
   // filter the items and add them to Approperiate Product List
 
 
+// TODO: Refactor API calls
 
+  // useEffect(() => {
+  //   const fetchmenus = async () => {
+  //     try {
+  //       const response = await fetch('/api/menus');
+  //       console.log(response)
+  //       if (!response.ok) {
+  //         throw new Error(`Error: ${response.statusText}`);
+  //       }
+  //       const data = await response.json();
+  //       console.log(data)
+  //       setMenus(data);
+  //     } catch (error) {
+  //       console.log(error)
+  //     } 
+  //   };
 
-  useEffect(() => {
-    const fetchmenus = async () => {
-      try {
-        const response = await fetch('/api/menus');
-        console.log(response)
-        if (!response.ok) {
-          throw new Error(`Error: ${response.statusText}`);
-        }
-        const data = await response.json();
-        console.log(data)
-        setMenus(data);
-      } catch (error) {
-        console.log(error)
-      } 
-    };
-
-    fetchmenus();
-  }, []);
+  //   fetchmenus();
+  // }, []);
 
   // console.log("here", menus)
 
