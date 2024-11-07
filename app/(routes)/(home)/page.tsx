@@ -10,6 +10,9 @@ import { bevan, robotoCondensed } from "@/fonts";
 import { SimcosButton } from "@/components/ui/SimcosButton";
 import Navbar  from "@/components/Navbar"
 import Link from "next/link";
+import UberEatsLogo from "@/public/ubereats.svg"
+import DoorDashLogo from "@/public/doordash.svg"
+import GrubHubLogo from "@/public/grubhub.svg"
 
 export const revalidate = 0;
 
@@ -45,16 +48,7 @@ const HomePage = async () => {
                 <p className={`hidden md:text-white text-xl mb-4 ${robotoCondensed.className} md:block`}>
                   {`Welcome to Simco’s Home of the World's Largest Old Tyme Franks Serving iconic food & drink for lunch, dinner, and late-night cravings to the Boston area since 1935.`}
                 </p>
-                <div className="flex mb-4 sm:flex-row">
-                  {/* <Link href="/menu">
-                    <SimcosButton
-                      variant={"simcos"}
-                      size={'nav'}
-                      className={bevan.className}
-                    >
-                      MENU
-                    </SimcosButton>
-                  </Link> */}
+                <div className="flex m-4 sm:flex-row">
                   <Link href="/menu">
                     <SimcosButton
                       variant={"simcos"}
@@ -64,23 +58,28 @@ const HomePage = async () => {
                       CURBSIDE PICKUP
                     </SimcosButton>
                   </Link>
+                </div>
+                <div className="flex mb-4 sm:flex-row">
                   <Link href="https://order.online/online-ordering/business/simcos-171605?delivery=true">
-                    <SimcosButton
-                      variant={"simcos"}
-                      size={'nav'}
-                      className={bevan.className}
-                    >
-                      DoorDash
-                    </SimcosButton>
+                    <Image
+                      priority
+                      alt="Doordash logo"
+                      src={DoorDashLogo}
+                    />
                   </Link>
                   <Link href="https://www.order.store/store/simcos-mattapan/2OY8MOdrRiGLoouS13ziQg">
-                    <SimcosButton
-                      variant={"simcos"}
-                      size={'nav'}
-                      className={bevan.className}
-                    >
-                      UberEats
-                    </SimcosButton>
+                    <Image
+                      priority
+                      alt="Uber Eats logo"
+                      src={UberEatsLogo}
+                    />
+                  </Link>
+                  <Link href="https://www.grubhub.com/restaurant/simcos-blue-hill-ave-1509-blue-hill-avenue-boston/1411211">
+                    <Image
+                      priority
+                      alt="Grubhub logo"
+                      src={GrubHubLogo}
+                    />
                   </Link>
                 </div>
                 <div className="mb-4">
