@@ -28,7 +28,7 @@ const HomePage = async () => {
         <div className="flex pt-24 md:py-24 min-h-screen max-h-full min-w-full flex-col md:flex-row">
           <div className="flex flex-col items-stretch basis-1/2 max-h-full max-w-full relative">
             <div className="relative flex flex-col items-center justify-center min-h-full max-h-full">
-              <div className="flex min-h-min min-w-min max-h-full max-w-full relative basis-1/2 items-center justify-center">
+              <div className="flex mb-4 ml-6 md:m-0 min-h-min min-w-min max-h-full max-w-full relative basis-1/2 items-center justify-center">
                 <Image
                   alt="An image of Simco's logo"
                   src="/simcos-logo.png"
@@ -48,7 +48,7 @@ const HomePage = async () => {
                 <p className={`hidden md:text-white text-xl mb-4 ${robotoCondensed.className} md:block`}>
                   {`Welcome to Simco’s Home of the World's Largest Old Tyme Franks Serving iconic food & drink for lunch, dinner, and late-night cravings to the Boston area since 1935.`}
                 </p>
-                <div className="flex m-4 sm:flex-row">
+                <div className="flex sm:flex-row justify-center items-center">
                   <Link href="/menu">
                     <SimcosButton
                       variant={"simcos"}
@@ -57,33 +57,7 @@ const HomePage = async () => {
                     >
                       CURBSIDE PICKUP
                     </SimcosButton>
-                  </Link>
-                </div>
-                <div className="flex mb-4 sm:flex-row">
-                  <Link href="https://order.online/online-ordering/business/simcos-171605?delivery=true">
-                    <Image
-                      priority
-                      alt="Doordash logo"
-                      src={DoorDashLogo}
-                    />
-                  </Link>
-                  <Link href="https://www.order.store/store/simcos-mattapan/2OY8MOdrRiGLoouS13ziQg">
-                    <Image
-                      priority
-                      alt="Uber Eats logo"
-                      src={UberEatsLogo}
-                    />
-                  </Link>
-                  <Link href="https://www.grubhub.com/restaurant/simcos-blue-hill-ave-1509-blue-hill-avenue-boston/1411211">
-                    <Image
-                      priority
-                      alt="Grubhub logo"
-                      src={GrubHubLogo}
-                    />
-                  </Link>
-                </div>
-                <div className="mb-4">
-                  <Link href="/menu">
+                    <Link href="/menu">
                       <SimcosButton
                         variant={"simcos"}
                         size={'nav'}
@@ -92,6 +66,7 @@ const HomePage = async () => {
                         MENU
                       </SimcosButton>
                     </Link>
+                  </Link>
                 </div>
               </div>
             </div>
