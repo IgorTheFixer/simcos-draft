@@ -57,6 +57,7 @@ const HomePage = async () => {
                     >
                       CURBSIDE PICKUP
                     </SimcosButton>
+                  </Link>
                     <Link href="/menu">
                       <SimcosButton
                         variant={"simcos"}
@@ -66,6 +67,14 @@ const HomePage = async () => {
                         MENU
                       </SimcosButton>
                     </Link>
+                  <Link href="https://order.online/business/Simcos-171605">
+                  <SimcosButton
+                      variant={"simcos"}
+                      size={'nav'}
+                      className={bevan.className}
+                    >
+                      DELIVERY
+                  </SimcosButton>
                   </Link>
                 </div>
               </div>
