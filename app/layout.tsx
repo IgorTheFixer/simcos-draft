@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: 'Simcos',
   description: 'A local restaurant dedicated to quality serice',
 }
-
+// test commit
 export default function RootLayout({
   children,
 }: {
