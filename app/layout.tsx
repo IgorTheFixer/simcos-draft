@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import ToastProvider from '@/providers/ToastProvider'
 import ModalProvider from '@/providers/ModalProvider'
+import DeliveryProvider from '@/providers/DeliveryProvider'
 
 const font = Urbanist({ subsets: ['latin'] })
 
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={`${font.className} bg-custom-gradient min-h-screen`}>
         <ToastProvider />
         <ModalProvider />
+        <DeliveryProvider />
         {children}
         {/* <Footer /> */}
       </body>

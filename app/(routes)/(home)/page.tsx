@@ -1,3 +1,5 @@
+'use client'
+
 import getBillboard from "@/actions/getBillboard";
 import getProducts from "@/actions/getProducts";
 import ProductList from "@/components/ProductList";
@@ -10,16 +12,19 @@ import { bevan, robotoCondensed } from "@/fonts";
 import { SimcosButton } from "@/components/ui/SimcosButton";
 import Navbar  from "@/components/Navbar"
 import Link from "next/link";
-import UberEatsLogo from "@/public/ubereats.svg"
-import DoorDashLogo from "@/public/doordash.svg"
-import GrubHubLogo from "@/public/grubhub.svg"
+import useDeliveryModal from "@/hooks/useDeliveryModal";
 
-export const revalidate = 0;
+// export const revalidate = 0;
 
-const HomePage = async () => {
-  const products = await getProducts({ isFeatured: true });
-  // TODO:refactor to make more dynamic
-  const billboard = await getBillboard(`179e1a71-193b-4f5f-aaae-07ffef632132`);
+const HomePage = () => {
+  const modal = useDeliveryModal();
+
+  const onDelivery = (event) => {
+    console.log("here")
+    event.stopPropagation();
+
+    modal.onOpen();
+  };
 
   return (
     <Container>
@@ -48,7 +53,7 @@ const HomePage = async () => {
                 <p className={`hidden md:text-white text-xl mb-4 ${robotoCondensed.className} md:block`}>
                   {`Welcome to Simco’s Home of the World's Largest Old Tyme Franks Serving iconic food & drink for lunch, dinner, and late-night cravings to the Boston area since 1935.`}
                 </p>
-                <div className="flex sm:flex-row justify-center items-center">
+                <div className="flex flex-col space-y-2 justify-center items-center">
                   <Link href="/menu">
                     <SimcosButton
                       variant={"simcos"}
@@ -57,7 +62,16 @@ const HomePage = async () => {
                     >
                       CURBSIDE PICKUP
                     </SimcosButton>
-                    <Link href="/menu">
+                  </Link>
+                  <SimcosButton
+                      variant={"simcos"}
+                      size={'nav'}
+                      className={bevan.className}
+                      onClick={onDelivery}
+                    >
+                      DELIVERY
+                  </SimcosButton>
+                  <Link href="/menu">
                       <SimcosButton
                         variant={"simcos"}
                         size={'nav'}
@@ -66,11 +80,9 @@ const HomePage = async () => {
                         MENU
                       </SimcosButton>
                     </Link>
-                  </Link>
                 </div>
               </div>
             </div>
-            {/* <ProductList title="" items={products} /> */}
           </div>
           <div className="basis-1/2 min-h-min min-w-min max-h-full max-w-full relative">
             <HotDog />

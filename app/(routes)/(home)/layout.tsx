@@ -6,7 +6,7 @@ const HomeLayout = ({children} :{ children: React.ReactNode}) =>{
    
       ">
       {children}
-      <SmartButton />
+      {/* <SmartButton /> */}
     </div>
   )
 }
