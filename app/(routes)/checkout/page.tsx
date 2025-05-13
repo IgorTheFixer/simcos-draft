@@ -21,6 +21,8 @@ import useCart from "@/hooks/useCart";
 import { toast } from "react-hot-toast";
 import { useRouter } from 'next/navigation';
 
+import Footer from "@/components/Footer";
+
 
 const FormSchema = z.object({
   name: z.string().min(2, {
@@ -209,6 +211,7 @@ export default function Checkout() {
       >
         <CreditCard />
       </PaymentForm>
+      <Footer />
     </Container>
   );
 }

@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 
 import Container from '@/components/ui/Container';
+import Footer from '@/components/Footer';
 import useCart from '@/hooks/useCart';
 
 import Summary from './components/Summary'
@@ -40,6 +41,7 @@ const CartPage = () => {
             <Summary />
           </div>
         </div>
+        <Footer />
       </Container>
     </div>
   )

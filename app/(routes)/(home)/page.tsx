@@ -14,6 +14,8 @@ import Navbar  from "@/components/Navbar"
 import Link from "next/link";
 import useDeliveryModal from "@/hooks/useDeliveryModal";
 
+import Footer from '@/components/Footer';
+
 // export const revalidate = 0;
 
 const HomePage = () => {
@@ -89,6 +91,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </Container>
   )
 };
