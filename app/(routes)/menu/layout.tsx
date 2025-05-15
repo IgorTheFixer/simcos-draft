@@ -1,4 +1,5 @@
 import Header from "@/components/Header"
+import Footer from "@/components/Footer"
 
 const MenuLayout = ({children} :{ children: React.ReactNode}) =>{
   return (
@@ -10,7 +11,8 @@ const MenuLayout = ({children} :{ children: React.ReactNode}) =>{
       bg-white
       ">
       <Header />
-      {children}
+        {children}
+      <Footer />
     </div>
   )
 }
