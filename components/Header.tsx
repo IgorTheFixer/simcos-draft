@@ -9,16 +9,18 @@ const Header = () => {
   return ( 
     <nav className="
       flex 
-      flex-col
       items-center 
       relative 
       min-h-min 
       justify-center 
       w-full 
       bg-white
-      border-black 
+      border-simcosOrange 
       border-solid 
       border-b-2
+      px-8 
+      md:px-40 
+      lg:px-40
       ">
       <Link href="/">
       <div className="relative h-full w-full py-2">
@@ -35,8 +37,13 @@ const Header = () => {
       </div>
       </Link>
       <SubNav />
+      {/* Order Button */}
+      <div>
+
+      </div>
     </nav>
    );
 }
  
 export default Header;
+

@@ -15,6 +15,7 @@ import Link from "next/link";
 import useDeliveryModal from "@/hooks/useDeliveryModal";
 
 import Footer from '@/components/Footer';
+import Header from "@/components/Header";
 
 // export const revalidate = 0;
 
@@ -31,7 +32,7 @@ const HomePage = () => {
   return (
     <Container>
       <div className="flex flex-col max-w-full">
-      <Navbar />
+      <Header />
         <div className="flex pt-24 md:py-24 min-h-screen max-h-full min-w-full flex-col md:flex-row">
           <div className="flex flex-col items-stretch basis-1/2 max-h-full max-w-full relative">
             <div className="relative flex flex-col items-center justify-center min-h-full max-h-full">

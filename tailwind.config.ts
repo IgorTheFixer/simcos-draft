@@ -55,6 +55,8 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        simcosOrange: "#EF370D",
+        simcosTan: "#EBD6B7"
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -77,10 +79,7 @@ const config = {
       },
     },
   },
-  colors: {
-    simcosOrange: "#EF370D",
-    simcosTan: "#EBD6B7"
-  },
+
   plugins: [require("tailwindcss-animate")],
 } satisfies Config
 
