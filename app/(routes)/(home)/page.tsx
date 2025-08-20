@@ -22,8 +22,8 @@ const HomePage = () => {
     <Container>
       <div className="flex flex-col min-h-screen max-w-full relative overflow-x-hidden">
         {/* Background Image */}
-        {/* <div 
-          className="absolute w-[500px] h-[375px] md:w-[800px] md:h-[600px] lg:w-[1200px] lg:h-[900px] z-0"
+        <div 
+          className="absolute w-[500px] h-[375px] md:w-[800px] md:h-[600px] lg:w-[1200px] lg:h-[900px] -z-10"
           style={{
             top: '-191px',
             right: '-261px',
@@ -32,7 +32,7 @@ const HomePage = () => {
             backgroundPosition: 'top right',
             backgroundRepeat: 'no-repeat'
           }}
-        /> */}
+        />
         <Header />
         {/* Content overlay */}
         <div className={`flex-1 min-w-full px-8 md:px-40 lg:px-40 md:text-simcosOrange text-5xl font-bold m-8 mb-4 ${inter.className}`}>
@@ -73,7 +73,7 @@ const HomePage = () => {
               <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4">Menu</p>
             </Button>
           </div>
-          <Card className="bg-[#D9D9D9]"> 
+          <Card className="bg-[#D9D9D9] rounded-tl-[167px] rounded-br-[113px]"> 
             <CardContent className="p-0">
               <div className="flex flex-col md:flex-row-reverse items-center">
                 <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-xl">
@@ -81,7 +81,7 @@ const HomePage = () => {
                     src={"/two-people.png"}
                     alt="two individuals having a conversation"
                     fill
-                    className="aspect-square object-cover rounded-xl"
+                    className="aspect-square object-cover rounded-xl rounded-br-[113px]"
                   />
                 </div>
                 <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
