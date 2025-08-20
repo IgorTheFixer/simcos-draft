@@ -8,7 +8,9 @@ const Footer = () => {
   const isHomePage = pathname === '/';
 
   return (
-    <footer className="border-t border-simcosOrange bg-white">
+    <footer className="border-t border-simcosOrange bg-white px-8 
+      md:px-40 
+      lg:px-40">
       <div className="mx-auto py-10">
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-8">
         {/* Contact Info */}
