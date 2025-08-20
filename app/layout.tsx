@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${font.className} bg-custom-gradient min-h-screen`}>
+      <body className={`${font.className} min-h-screen`}>
         <ToastProvider />
         <ModalProvider />
         <DeliveryProvider />
