@@ -39,16 +39,38 @@ const HomePage = () => {
           HUNGRY?
           <p className={`${inter.className} text-xs font-thin text-black`}>Welcome to Simco’s Home of the World's Largest Old Tyme Franks Serving iconic food & drink for lunch, dinner, and late-night cravings to the Boston area since 1935.</p>
           {/* Action Buttons */}
-          <div>
-            <Button className="bg-white border-2 shadow-lg shadow-gray-500 flex flex-col items-center text-left w-32 md:w-40 lg:w-48 aspect-square rounded-xl gap-2">
+          <div className="flex gap-4">
+            <Button className="bg-white shadow-lg shadow-gray-500 flex flex-col items-center text-left w-32 md:w-40 lg:w-48  rounded-[57px] rounded-br-[142px]">
               <Image 
                 src={"/location.png"}
-                alt="two individuals having a conversation"
+                alt="an icon of a storefront"
                 width={80}
                 height={80}
                 className="aspect-square object-cover rounded-xl"
                 />
               <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4">Curbside<br/>pickup</p>
+            </Button>
+
+            <Button className="bg-white shadow-lg shadow-gray-500 flex flex-col items-center text-left w-32 md:w-40 lg:w-48  rounded-[57px] rounded-br-[142px]">
+              <Image 
+                src={"/pickup-car.png"}
+                alt="an icon of a delivery truck"
+                width={80}
+                height={80}
+                className="aspect-square object-cover rounded-xl"
+                />
+              <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4">Delivery</p>
+            </Button>
+
+            <Button className="bg-white shadow-lg shadow-gray-500 flex flex-col items-center text-left w-32 md:w-40 lg:w-48  rounded-[57px] rounded-br-[142px]">
+              <Image 
+                src={"/burger.png"}
+                alt="an icon of a burger"
+                width={80}
+                height={80}
+                className="aspect-square object-cover rounded-xl"
+                />
+              <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4">Menu</p>
             </Button>
           </div>
           <Card className="bg-[#D9D9D9]"> 
