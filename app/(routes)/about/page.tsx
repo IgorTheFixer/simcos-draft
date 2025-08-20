@@ -6,8 +6,6 @@ import Footer from '@/components/Footer';
 import Header from "@/components/Header";
 import { inter } from "@/fonts";
 
-// export const revalidate = 0;
-
 const AboutPage = () => {
 
   return (
