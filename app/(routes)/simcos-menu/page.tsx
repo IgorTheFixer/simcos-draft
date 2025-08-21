@@ -23,17 +23,17 @@ const HomePage = () => {
     <Container>
       <div className="flex flex-col min-h-screen max-w-full relative overflow-x-hidden">
         {/* Background Image */}
-        <div 
+        {/* <div 
           className="absolute w-[500px] h-[375px] md:w-[800px] md:h-[600px] lg:w-[1200px] lg:h-[900px] -z-10"
           style={{
             top: '-191px',
             right: '-261px',
-            backgroundImage: 'url(/simcos-homepage-combined.png)',
+            backgroundImage: 'url(/menu-background.png)',
             backgroundSize: 'contain',
             backgroundPosition: 'top right',
             backgroundRepeat: 'no-repeat'
           }}
-        />
+        /> */}
         <Header />
         {/* Content overlay */}
         <div className={`flex-1 min-w-full px-8 md:px-40 lg:px-40 md:text-simcosOrange text-5xl font-bold m-8 mb-4 ${inter.className}`}>
@@ -41,59 +41,321 @@ const HomePage = () => {
             MENU
             <SimcosButton variant={"secondary"} className="bg-simcosOrange text-white font-medium text-[6px] w-24 whitespace-normal text-start leading-tight rounded-tr-[48.5px]">Todays Offer<br/>FREE BOX OF FRIES<br/>On all orders above $150</SimcosButton>
           </div>
-          {/* Action Buttons */}
-          <div className="flex gap-4">
-            <Button className="bg-white shadow-lg shadow-gray-500 flex flex-col items-center text-left w-32 md:w-40 lg:w-48  rounded-[57px] rounded-br-[142px]">
-              <Image 
-                src={"/location.png"}
-                alt="an icon of a storefront"
-                width={80}
-                height={80}
-                className="aspect-square object-cover rounded-xl"
-                />
-              <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4">Curbside<br/>pickup</p>
-            </Button>
+          {/* Menu Cards */}
+          <div className="flex flex-col gap-4 w-fit">
+            <Card className="bg-[#F7F7F7] rounded-tl-[85.5px] rounded-bl-[19px] rounded-br-[60px] border-none w-full"> 
+              <CardContent className="p-0">
+                <div className="flex flex-col md:flex-row-reverse items-center">
+                  <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-xl">
+                    <Image 
+                      src={"/new-greek.png"}
+                      alt="two individuals having a conversation"
+                      fill
+                      className="aspect-square object-cover rounded-xl rounded-br-[60px]"
+                    />
+                  </div>
+                  <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
+                    <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4">Greek Sandwiches</p>
+                    <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
 
-            <Button className="bg-white shadow-lg shadow-gray-500 flex flex-col items-center text-left w-32 md:w-40 lg:w-48  rounded-[57px] rounded-br-[142px]">
-              <Image 
-                src={"/pickup-car.png"}
-                alt="an icon of a delivery truck"
-                width={80}
-                height={80}
-                className="aspect-square object-cover rounded-xl"
-                />
-              <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4">Delivery</p>
-            </Button>
+            <div className="flex gap-4 ">
+              <Card className="bg-[#D9D9D9]  rounded-bl-[19px] rounded-br-[60px] border-none basis-1/2"> 
+                <CardContent className="p-0">
+                  <div className="flex flex-col-reverse items-center">
+                    <div className="relative w-full aspect-square rounded-xl">
+                      <Image 
+                        src={"/new-dinner.png"}
+                        alt="two individuals having a conversation"
+                        fill
+                        className="aspect-square object-cover rounded-xl rounded-br-[60px]"
+                      />
+                    </div>
+                    <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
+                      <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Dinners</p>
+                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="bg-[#F4EFEF] rounded-bl-[19px] rounded-br-[60px] border-none basis-1/2"> 
+                <CardContent className="p-0">
+                  <div className="flex flex-col-reverse items-center">
+                    <div className="relative w-full aspect-square rounded-xl">
+                      <Image 
+                        src={"/new-chicken.png"}
+                        alt="two individuals having a conversation"
+                        fill
+                        className="aspect-square object-cover rounded-xl rounded-br-[60px]"
+                      />
+                    </div>
+                    <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
+                      <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Chicken Dinners</p>
+                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
 
-            <Button className="bg-white shadow-lg shadow-gray-500 flex flex-col items-center text-left w-32 md:w-40 lg:w-48  rounded-[57px] rounded-br-[142px]">
-              <Image 
-                src={"/burger.png"}
-                alt="an icon of a burger"
-                width={80}
-                height={80}
-                className="aspect-square object-cover rounded-xl"
-                />
-              <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4">Menu</p>
-            </Button>
+            <div className="flex gap-4 ">
+              <Card className="bg-[#D9D9D9]  rounded-bl-[19px] rounded-br-[60px] border-none basis-1/3"> 
+                <CardContent className="p-0">
+                  <div className="flex flex-col items-center">
+                    <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-xl">
+                      <Image 
+                        src={"/new-soup.png"}
+                        alt="two individuals having a conversation"
+                        fill
+                        className="aspect-square object-cover rounded-xl rounded-br-[60px]"
+                      />
+                    </div>
+                    <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
+                      <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Dinners</p>
+                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="bg-[#F4EFEF] rounded-bl-[19px] rounded-br-[60px] border-none basis-1/3"> 
+                <CardContent className="p-0">
+                  <div className="flex flex-col items-center">
+                    <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-xl">
+                      <Image 
+                        src={"/new-wrap.png"}
+                        alt="two individuals having a conversation"
+                        fill
+                        className="aspect-square object-cover rounded-xl rounded-br-[60px]"
+                      />
+                    </div>
+                    <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
+                      <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Chicken Dinners</p>
+                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="bg-[#F4EFEF] rounded-bl-[19px] rounded-br-[60px] border-none basis-1/"> 
+                <CardContent className="p-0">
+                  <div className="flex flex-col items-center">
+                    <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-xl">
+                      <Image 
+                        src={"/new-spaghetti.png"}
+                        alt="two individuals having a conversation"
+                        fill
+                        className="aspect-square object-cover rounded-xl rounded-br-[60px]"
+                      />
+                    </div>
+                    <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
+                      <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Chicken Dinners</p>
+                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="flex">
+            <Card className="bg-[#F7F7F7] rounded-tl-[85.5px] rounded-bl-[19px] rounded-br-[60px] border-none w-full"> 
+              <CardContent className="p-0">
+                <div className="flex flex-col md:flex-row-reverse items-center">
+                  <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-xl">
+                    <Image 
+                      src={"/new-greek.png"}
+                      alt="two individuals having a conversation"
+                      fill
+                      className="aspect-square object-cover rounded-xl rounded-br-[60px]"
+                    />
+                  </div>
+                  <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
+                    <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4">Featured</p>
+                    <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            </div>
+
+            <div className="flex gap-4 ">
+              <Card className="bg-[#D9D9D9]  rounded-bl-[19px] rounded-br-[60px] border-none basis-1/2"> 
+                <CardContent className="p-0">
+                  <div className="flex flex-col items-center">
+                    <div className="relative w-full aspect-square rounded-xl">
+                      <Image 
+                        src={"/new-pizza.png"}
+                        alt="two individuals having a conversation"
+                        fill
+                        className="aspect-square object-cover rounded-xl rounded-br-[60px]"
+                      />
+                    </div>
+                    <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
+                      <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Pizza</p>
+                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="bg-[#F4EFEF] rounded-bl-[19px] rounded-br-[60px] border-none basis-1/2"> 
+                <CardContent className="p-0">
+                  <div className="flex flex-col items-center">
+                    <div className="relative w-full aspect-square rounded-xl">
+                      <Image 
+                        src={"/new-calzone.png"}
+                        alt="two individuals having a conversation"
+                        fill
+                        className="aspect-square object-cover rounded-xl rounded-br-[60px]"
+                      />
+                    </div>
+                    <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
+                      <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Calzones</p>
+                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="flex">
+            <Card className="bg-[#F7F7F7] rounded-tl-[85.5px] rounded-bl-[19px] rounded-br-[60px] border-none w-full"> 
+              <CardContent className="p-0">
+                <div className="flex flex-col md:flex-row items-center">
+                  <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-xl">
+                    <Image 
+                      src={"/new-salad.png"}
+                      alt="two individuals having a conversation"
+                      fill
+                      className="aspect-square object-cover rounded-xl rounded-br-[60px]"
+                    />
+                  </div>
+                  <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
+                    <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4">Salads</p>
+                    <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            </div>
+
+            <div className="flex">
+            <Card className="bg-[#F7F7F7] rounded-tl-[85.5px] rounded-bl-[19px] rounded-br-[60px] border-none w-full"> 
+              <CardContent className="p-0">
+                <div className="flex flex-col md:flex-row-reverse items-center">
+                  <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-xl">
+                    <Image 
+                      src={"/new-sub.png"}
+                      alt="two individuals having a conversation"
+                      fill
+                      className="aspect-square object-cover rounded-xl rounded-br-[60px]"
+                    />
+                  </div>
+                  <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
+                    <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4">Subs</p>
+                    <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            </div>
+
+            <div className="flex gap-4 ">
+              <Card className="bg-[#D9D9D9]  rounded-bl-[19px] rounded-br-[60px] border-none basis-1/2"> 
+                <CardContent className="p-0">
+                  <div className="flex flex-col-reverse items-center">
+                    <div className="relative w-full aspect-square rounded-xl">
+                      <Image 
+                        src={"/new-seafood.png"}
+                        alt="two individuals having a conversation"
+                        fill
+                        className="aspect-square object-cover rounded-xl rounded-br-[60px]"
+                      />
+                    </div>
+                    <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
+                      <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Fresh Seafood</p>
+                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="bg-[#F4EFEF] rounded-bl-[19px] rounded-br-[60px] border-none basis-1/2"> 
+                <CardContent className="p-0">
+                  <div className="flex flex-col-reverse items-center">
+                    <div className="relative w-full aspect-square rounded-xl">
+                      <Image 
+                        src={"/new-box.png"}
+                        alt="two individuals having a conversation"
+                        fill
+                        className="aspect-square object-cover rounded-xl rounded-br-[60px]"
+                      />
+                    </div>
+                    <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
+                      <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Boxes</p>
+                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="flex gap-4 ">
+              <Card className="bg-[#D9D9D9]  rounded-bl-[19px] rounded-br-[60px] border-none basis-1/3"> 
+                <CardContent className="p-0">
+                  <div className="flex flex-col items-center">
+                    <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-xl">
+                      <Image 
+                        src={"/new-slice.png"}
+                        alt="two individuals having a conversation"
+                        fill
+                        className="aspect-square object-cover rounded-xl rounded-br-[60px]"
+                      />
+                    </div>
+                    <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
+                      <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Slice of Pizza</p>
+                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="bg-[#F4EFEF] rounded-bl-[19px] rounded-br-[60px] border-none basis-1/3"> 
+                <CardContent className="p-0">
+                  <div className="flex flex-col items-center">
+                    <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-xl">
+                      <Image 
+                        src={"/new-dessert.png"}
+                        alt="two individuals having a conversation"
+                        fill
+                        className="aspect-square object-cover rounded-xl rounded-br-[60px]"
+                      />
+                    </div>
+                    <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
+                      <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Desserts</p>
+                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="bg-[#F4EFEF] rounded-bl-[19px] rounded-br-[60px] border-none basis-1/"> 
+                <CardContent className="p-0">
+                  <div className="flex flex-col items-center">
+                    <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-xl">
+                      <Image 
+                        src={"/new-drink.png"}
+                        alt="two individuals having a conversation"
+                        fill
+                        className="aspect-square object-cover rounded-xl rounded-br-[60px]"
+                      />
+                    </div>
+                    <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
+                      <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Beverages</p>
+                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
-          <Card className="bg-[#D9D9D9] rounded-tl-[167px] rounded-br-[113px]"> 
-            <CardContent className="p-0">
-              <div className="flex flex-col md:flex-row-reverse items-center">
-                <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-xl">
-                  <Image 
-                    src={"/two-people.png"}
-                    alt="two individuals having a conversation"
-                    fill
-                    className="aspect-square object-cover rounded-xl rounded-br-[113px]"
-                  />
-                </div>
-                <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
-                  <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4">We would like you to be part of our team!</p>
-                  <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">Contact us here</Button>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
         </div>
         <Footer />
       </div>
