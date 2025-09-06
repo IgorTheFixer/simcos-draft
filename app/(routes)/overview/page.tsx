@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import Header from "@/components/Header";
 import { inter } from "@/fonts";
 import Image from "next/image";
+import Link from "next/link";
 import {
   Card,
   CardContent,
@@ -56,7 +57,9 @@ const HomePage = () => {
                   </div>
                   <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
                     <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4">Greek Sandwiches</p>
-                    <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                    <Link href="/menu#greek-sandwiches">
+                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                    </Link>
                   </div>
                 </div>
               </CardContent>
@@ -76,7 +79,9 @@ const HomePage = () => {
                     </div>
                     <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
                       <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Dinners</p>
-                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      <Link href="/menu#dinners">
+                        <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      </Link>
                     </div>
                   </div>
                 </CardContent>
@@ -94,7 +99,9 @@ const HomePage = () => {
                     </div>
                     <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
                       <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Chicken Dinners</p>
-                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      <Link href="/menu#chicken-dinners">
+                        <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      </Link>
                     </div>
                   </div>
                 </CardContent>
@@ -114,8 +121,10 @@ const HomePage = () => {
                       />
                     </div>
                     <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
-                      <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Dinners</p>
-                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Soups</p>
+                      <Link href="/menu#soups">
+                        <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      </Link>
                     </div>
                   </div>
                 </CardContent>
@@ -132,8 +141,10 @@ const HomePage = () => {
                       />
                     </div>
                     <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
-                      <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Chicken Dinners</p>
-                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Wraps</p>
+                      <Link href="/menu#wraps">
+                        <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      </Link>
                     </div>
                   </div>
                 </CardContent>
@@ -150,8 +161,10 @@ const HomePage = () => {
                       />
                     </div>
                     <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
-                      <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Chicken Dinners</p>
-                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Spaghetti</p>
+                      <Link href="/menu#spaghetti">
+                        <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      </Link>
                     </div>
                   </div>
                 </CardContent>
@@ -172,7 +185,9 @@ const HomePage = () => {
                   </div>
                   <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
                     <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4">Featured</p>
-                    <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                    <Link href="/menu#featured">
+                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                    </Link>
                   </div>
                 </div>
               </CardContent>
@@ -193,7 +208,9 @@ const HomePage = () => {
                     </div>
                     <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
                       <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Pizza</p>
-                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      <Link href="/menu#pizza">
+                        <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      </Link>
                     </div>
                   </div>
                 </CardContent>
@@ -211,7 +228,9 @@ const HomePage = () => {
                     </div>
                     <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
                       <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Calzones</p>
-                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      <Link href="/menu#calzones">
+                        <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      </Link>
                     </div>
                   </div>
                 </CardContent>
@@ -232,7 +251,9 @@ const HomePage = () => {
                   </div>
                   <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
                     <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4">Salads</p>
-                    <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                    <Link href="/menu#salads">
+                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                    </Link>
                   </div>
                 </div>
               </CardContent>
@@ -253,7 +274,9 @@ const HomePage = () => {
                   </div>
                   <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
                     <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4">Subs</p>
-                    <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                    <Link href="/menu#subs">
+                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                    </Link>
                   </div>
                 </div>
               </CardContent>
@@ -274,7 +297,9 @@ const HomePage = () => {
                     </div>
                     <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
                       <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Fresh Seafood</p>
-                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      <Link href="/menu#fresh-seafood">
+                        <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      </Link>
                     </div>
                   </div>
                 </CardContent>
@@ -292,7 +317,9 @@ const HomePage = () => {
                     </div>
                     <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
                       <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Boxes</p>
-                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      <Link href="/menu#boxes">
+                        <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      </Link>
                     </div>
                   </div>
                 </CardContent>
@@ -313,7 +340,9 @@ const HomePage = () => {
                     </div>
                     <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
                       <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Slice of Pizza</p>
-                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      <Link href="/menu#slice-of-pizza">
+                        <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      </Link>
                     </div>
                   </div>
                 </CardContent>
@@ -331,7 +360,9 @@ const HomePage = () => {
                     </div>
                     <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
                       <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Desserts</p>
-                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      <Link href="/menu#desserts">
+                        <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      </Link>
                     </div>
                   </div>
                 </CardContent>
@@ -349,7 +380,9 @@ const HomePage = () => {
                     </div>
                     <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
                       <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Beverages</p>
-                      <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      <Link href="/menu#beverages">
+                        <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
+                      </Link>
                     </div>
                   </div>
                 </CardContent>

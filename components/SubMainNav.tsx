@@ -11,8 +11,8 @@ const SubMainNav = () => {
 
   return (
     <nav className="mx-6 flex items-center space-x-4 lg:space-x-6 text-simcosOrange">
-      <Link href="/menu">Menu</Link>
-      <Link href="/stories">Stories</Link>
+      <Link href="/overview">Menu</Link>
+      {/* <Link href="/stories">Stories</Link> */}
       <Link href="/about">About</Link>
     </nav>
   )
