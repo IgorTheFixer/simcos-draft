@@ -14,10 +14,11 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import Button from "@/components/ui/Button";
+import { useRouter } from "next/navigation";
 
 
 const HomePage = () => {
-
+  const router = useRouter();
   return (
     <Container>
       <div className="flex flex-col min-h-screen max-w-full relative overflow-x-hidden">
@@ -62,7 +63,7 @@ const HomePage = () => {
               <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4">Delivery</p>
             </Button>
 
-            <Button className="bg-white shadow-lg shadow-gray-500 flex flex-col items-center text-left w-32 md:w-40 lg:w-48  rounded-[57px] rounded-br-[142px]">
+            <Button onClick={() => router.push('/overview')} className="bg-white shadow-lg shadow-gray-500 flex flex-col items-center text-left w-32 md:w-40 lg:w-48  rounded-[57px] rounded-br-[142px]">
               <Image 
                 src={"/burger.png"}
                 alt="an icon of a burger"
