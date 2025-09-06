@@ -43,7 +43,7 @@ const HomePage = () => {
             <SimcosButton variant={"secondary"} className="bg-simcosOrange text-white font-medium text-[6px] w-24 whitespace-normal text-start leading-tight rounded-tr-[48.5px]">Todays Offer<br/>FREE BOX OF FRIES<br/>On all orders above $150</SimcosButton>
           </div>
           {/* Menu Cards */}
-          <div className="flex flex-col gap-4 w-fit">
+          <div className="flex flex-col gap-4 w-full">
             <Card className="bg-[#F7F7F7] rounded-tl-[85.5px] rounded-bl-[19px] rounded-br-[60px] border-none w-full"> 
               <CardContent className="p-0">
                 <div className="flex flex-col md:flex-row-reverse items-center">
@@ -161,7 +161,7 @@ const HomePage = () => {
                       />
                     </div>
                     <div className="flex flex-col p-4 md:p-6 lg:p-8 text-center md:text-left">
-                      <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center">Spaghetti</p>
+                      <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4 text-center"></p>
                       <Link href="/menu#spaghetti">
                         <Button className="whitespace-nowrap text-sm md:text-base px-4 py-2 md:px-6 md:py-3">View all dishes</Button>
                       </Link>
