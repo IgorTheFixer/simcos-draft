@@ -15,10 +15,19 @@ import {
 } from "@/components/ui/card"
 import Button from "@/components/ui/Button";
 import { useRouter } from "next/navigation";
+import useDeliveryModal from "@/hooks/useDeliveryModal";
 
 
 const HomePage = () => {
   const router = useRouter();
+
+  const modal = useDeliveryModal();
+
+  const onDelivery = () => {
+    console.log("here")
+    event.stopPropagation()
+    modal.onOpen()
+  }
   return (
     <Container>
       <div className="flex flex-col min-h-screen max-w-full relative overflow-x-hidden">
@@ -41,7 +50,7 @@ const HomePage = () => {
           <p className={`${inter.className} text-xs font-thin text-black`}>Welcome to Simco’s Home of the World's Largest Old Tyme Franks Serving iconic food & drink for lunch, dinner, and late-night cravings to the Boston area since 1935.</p>
           {/* Action Buttons */}
           <div className="flex gap-4">
-            <Button className="bg-white shadow-lg shadow-gray-500 flex flex-col items-center text-left w-32 md:w-40 lg:w-48  rounded-[57px] rounded-br-[142px]">
+            <Button onClick={() => router.push('/overview')} className="bg-white shadow-lg shadow-gray-500 flex flex-col items-center text-left w-32 md:w-40 lg:w-48  rounded-[57px] rounded-br-[142px]">
               <Image 
                 src={"/location.png"}
                 alt="an icon of a storefront"
@@ -52,7 +61,7 @@ const HomePage = () => {
               <p className="text-base md:text-lg lg:text-xl text-simcosOrange mb-4">Curbside<br/>pickup</p>
             </Button>
 
-            <Button className="bg-white shadow-lg shadow-gray-500 flex flex-col items-center text-left w-32 md:w-40 lg:w-48  rounded-[57px] rounded-br-[142px]">
+            <Button onClick={onDelivery} className="bg-white shadow-lg shadow-gray-500 flex flex-col items-center text-left w-32 md:w-40 lg:w-48  rounded-[57px] rounded-br-[142px]">
               <Image 
                 src={"/pickup-car.png"}
                 alt="an icon of a delivery truck"
