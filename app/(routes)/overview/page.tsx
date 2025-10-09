@@ -40,7 +40,7 @@ const HomePage = () => {
                 <div className="flex flex-col md:flex-row-reverse items-center">
                   <div className="relative w-full h-48 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
                     <Image 
-                      src={"/new-greek.png"}
+                      src={"/Gyro_Menu Categories_Gyro v2.jpg"}
                       alt="Greek sandwiches"
                       fill
                       className="object-cover rounded-br-[40px] sm:rounded-br-[60px]"
@@ -63,7 +63,7 @@ const HomePage = () => {
                   <div className="flex flex-col-reverse items-center">
                     <div className="relative w-full aspect-square">
                       <Image 
-                        src={"/new-dinner.png"}
+                        src={"/Dinners_Menu Categories_Slouvaki.jpg"}
                         alt="Dinner dishes"
                         fill
                         className="object-cover rounded-br-[40px] sm:rounded-br-[60px]"
@@ -83,7 +83,7 @@ const HomePage = () => {
                   <div className="flex flex-col-reverse items-center">
                     <div className="relative w-full aspect-square">
                       <Image 
-                        src={"/new-chicken.png"}
+                        src={"/Chicken Dinners_Menu Categories_Chicken Wing Dinner.jpg"}
                         alt="Chicken dinner dishes"
                         fill
                         className="object-cover rounded-br-[40px] sm:rounded-br-[60px]"
@@ -147,7 +147,7 @@ const HomePage = () => {
                   <div className="flex flex-col items-center">
                     <div className="relative w-full aspect-square sm:w-40 sm:h-40 md:w-52 md:h-52 lg:w-64 lg:h-64">
                       <Image 
-                        src={"/new-spaghetti.png"}
+                        src={"/Pasta_Menu Categories_Chicken Broccoli Alfredo.jpg"}
                         alt="Spaghetti dishes"
                         fill
                         className="object-cover rounded-br-[40px] sm:rounded-br-[60px]"
@@ -170,7 +170,7 @@ const HomePage = () => {
                 <div className="flex flex-col md:flex-row-reverse items-center">
                   <div className="relative w-full h-48 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
                     <Image 
-                      src={"/new-greek.png"}
+                      src={"/Featuring_Menu Categories_Cheese Burger.jpg"}
                       alt="Featured dishes"
                       fill
                       className="object-cover rounded-br-[40px] sm:rounded-br-[60px]"
@@ -193,7 +193,7 @@ const HomePage = () => {
                   <div className="flex flex-col items-center">
                     <div className="relative w-full aspect-square">
                       <Image 
-                        src={"/new-pizza.png"}
+                        src={"/Pizza_Menu Categpries_Cheese Pizza.jpg"}
                         alt="Pizza dishes"
                         fill
                         className="object-cover rounded-br-[40px] sm:rounded-br-[60px]"
@@ -213,7 +213,7 @@ const HomePage = () => {
                   <div className="flex flex-col items-center">
                     <div className="relative w-full aspect-square">
                       <Image 
-                        src={"/new-calzone.png"}
+                        src={"/Calzones_Menu Categories_Steak and Cheese Calzone.jpg"}
                         alt="Calzone dishes"
                         fill
                         className="object-cover rounded-br-[40px] sm:rounded-br-[60px]"
@@ -236,7 +236,7 @@ const HomePage = () => {
                 <div className="flex flex-col md:flex-row items-center">
                   <div className="relative w-full h-48 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
                     <Image 
-                      src={"/new-salad.png"}
+                      src={"/Salads_Menu Categories_Chicken Ceasar.jpg"}
                       alt="Salad dishes"
                       fill
                       className="object-cover rounded-br-[40px] sm:rounded-br-[60px]"
@@ -301,7 +301,7 @@ const HomePage = () => {
                   <div className="flex flex-col-reverse items-center">
                     <div className="relative w-full aspect-square">
                       <Image 
-                        src={"/new-box.png"}
+                        src={"/Boxes_Menu Categories_Cheese Fries.jpg"}
                         alt="Box meals"
                         fill
                         className="object-cover rounded-br-[40px] sm:rounded-br-[60px]"
@@ -345,7 +345,7 @@ const HomePage = () => {
                   <div className="flex flex-col items-center">
                     <div className="relative w-full aspect-square sm:w-40 sm:h-40 md:w-52 md:h-52 lg:w-64 lg:h-64">
                       <Image 
-                        src={"/new-dessert.png"}
+                        src={"/Desserts_Menu Categories_Sundae.jpg"}
                         alt="Dessert dishes"
                         fill
                         className="object-cover rounded-br-[40px] sm:rounded-br-[60px]"
@@ -365,7 +365,7 @@ const HomePage = () => {
                   <div className="flex flex-col items-center">
                     <div className="relative w-full aspect-square sm:w-40 sm:h-40 md:w-52 md:h-52 lg:w-64 lg:h-64">
                       <Image 
-                        src={"/new-drink.png"}
+                        src={"/Drinks_Menu Categories_Joe Tea.jpg"}
                         alt="Beverages"
                         fill
                         className="object-cover rounded-br-[40px] sm:rounded-br-[60px]"

@@ -88,7 +88,7 @@ const HomePage = () => {
               <div className="flex flex-col md:flex-row-reverse items-center">
                 <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-xl">
                   <Image 
-                    src={"/two-people.png"}
+                    src={"/simcos hero food.jpg"}
                     alt="two individuals having a conversation"
                     fill
                     className="aspect-square object-cover rounded-xl rounded-br-[113px]"
