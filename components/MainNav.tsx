@@ -37,7 +37,7 @@ const MainNav = () => {
       ))} */}
       <Link
           // key={route.href}
-          href="/menu"
+          href="/overview"
           className={cn(
             'text-sm font-medium transition-colors hover:text-[#EBD6B7] text-white'
           )}

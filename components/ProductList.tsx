@@ -19,32 +19,36 @@ const ProductList: React.FC<ProductListProps> = ({
   items
 }) => {
   console.log("Product List log", items)
+  const slugify = (text: string) => text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+  const anchorId = slugify(title);
   return (
-    <AccordionItem value={title} className="space-y-4">
-      <AccordionTrigger>
-        <h1 className={`text-[18px] py-4 ${robotoCondensed.className}`}>{title}</h1>
-      </AccordionTrigger>
-      <AccordionContent>
-        {items.length === 0 && <NoResults />}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-          {items
-          .sort((a,b) =>{
+    <div id={anchorId}>
+      <AccordionItem value={title} className="space-y-4">
+        <AccordionTrigger>
+          <h1 className={`text-[18px] py-4 ${robotoCondensed.className}`}>{title}</h1>
+        </AccordionTrigger>
+        <AccordionContent>
+          {items.length === 0 && <NoResults />}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+            {items
+            .sort((a,b) =>{
 
-            const hasImageA = a.image ? 1 : 0;
-            const hasImageB = b.image ? 1 : 0;
+              const hasImageA = a.image ? 1 : 0;
+              const hasImageB = b.image ? 1 : 0;
     
-            return hasImageB - hasImageA;
-          })
-          .map((item) => {
-            // const uniqueId = uuidv4()
-            // const itemWithId = { ...item, uniqueId: uniqueId }
-            return(
-              <ProductCard key={item.id} data={item} />
-            )
-          })}
-        </div>
-      </AccordionContent>
-    </AccordionItem>
+              return hasImageB - hasImageA;
+            })
+            .map((item) => {
+              // const uniqueId = uuidv4()
+              // const itemWithId = { ...item, uniqueId: uniqueId }
+              return(
+                <ProductCard key={item.id} data={item} />
+              )
+            })}
+          </div>
+        </AccordionContent>
+      </AccordionItem>
+    </div>
    );
 }
  

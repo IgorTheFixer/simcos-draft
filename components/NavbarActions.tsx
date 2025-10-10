@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import useCart from "@/hooks/useCart";
 
 import Button from "@/components/ui/Button";
+import Link from "next/link";
 
 const NavbarActions = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -23,6 +24,8 @@ const NavbarActions = () => {
 
   return ( 
     <div className="ml-auto flex items-center gap-x-4">
+      <Link className="text-simcosOrange  whitespace-nowrap" href="/login">Sign In</Link>
+      <Button onClick={() => router.push('/overview')} className="whitespace-nowrap">Order Now</Button>
       <Button onClick={() => router.push('/cart')} className="flex items-center border-2 border-[#EF370D] rounded-full bg-white px-2 lg:px-4 py-2">
         <ShoppingBag
           size={20}

@@ -1,18 +1,21 @@
 'use client'
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
+import { Facebook, Instagram, Youtube } from 'lucide-react';
 
 const Footer = () => {
   const pathname = usePathname();
   const isHomePage = pathname === '/';
 
   return (
-    <footer className={clsx('border-t', isHomePage ? 'text-white' : 'text-black')}>
+    <footer className="border-t border-simcosOrange bg-white px-8 
+      md:px-40 
+      lg:px-40">
       <div className="mx-auto py-10">
-      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
+      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-8">
         {/* Contact Info */}
         <div>
-          <h3 className="text-xl font-semibold mb-2">Contact Us</h3>
+          <h3 className="text-xl font-semibold mb-2 text-simcosOrange">Contact Us</h3>
           <p className="text-sm">Simco's Mattapan</p>
           <p className="text-sm">1509 Blue Hill Ave</p>
           <p className="text-sm"> Mattapan, MA 02126</p>
@@ -22,17 +25,19 @@ const Footer = () => {
 
         {/* Hours of Operation */}
         <div>
-          <h3 className="text-xl font-semibold mb-2">Hours of Operation</h3>
+          <h3 className="text-xl font-semibold mb-2 text-simcosOrange">Hours of Operation</h3>
           <ul className="text-sm">
             <li>Mon – Fri: 9:30 AM – 1:00 AM</li>
             <li>Sun – Sat: 9:30 AM – 1:00 AM</li>
           </ul>
         </div>
 
+        <div className='flex space-x-2 text-simcosOrange'>
+          <Instagram strokeWidth={"1px"}/>
+          <Facebook strokeWidth={"1px"}/>
+          <Youtube strokeWidth={"1px"}/>
+        </div>
       </div>
-        <p className={clsx('text-center text-xs', isHomePage ? 'text-white' : 'text-black')}>
-          &copy; Simcos
-        </p>
       </div>
     </footer>
   )
