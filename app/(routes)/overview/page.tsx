@@ -28,7 +28,7 @@ const HomePage = () => {
         <div className={`flex-1 min-w-full px-4 sm:px-8 md:px-20 lg:px-40 text-3xl sm:text-4xl md:text-5xl font-bold m-4 sm:m-6 md:m-8 mb-4 ${inter.className}`}>
           <div className="border-b-[1px] border-simcosOrange w-fit flex gap-2 items-start text-simcosOrange">
             MENU
-            <SimcosButton variant={"secondary"} className="bg-simcosOrange text-white font-medium text-[6px] sm:text-[8px] w-20 sm:w-24 whitespace-normal text-start leading-tight rounded-tr-[48.5px]">Todays Offer<br/>FREE BOX OF FRIES<br/>On all orders above $150</SimcosButton>
+            <div className="bg-simcosOrange text-white py-2 font-medium text-[6px] sm:text-[8px] w-20 sm:w-24 whitespace-normal text-start leading-tight rounded-tr-[48.5px]">Todays Offer<br/>FREE BOX OF FRIES<br/>On all orders above $150</div>
           </div>
           
           {/* Menu Cards */}

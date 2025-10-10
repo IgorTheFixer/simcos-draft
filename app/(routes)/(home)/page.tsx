@@ -45,9 +45,11 @@ const HomePage = () => {
         />
         <Header />
         {/* Content overlay */}
-        <div className={`flex-1 min-w-full px-8 md:px-40 lg:px-40 md:text-simcosOrange text-5xl font-bold m-8 mb-4 ${inter.className}`}>
+        <div className={`flex-1 min-w-full px-8 md:px-40 lg:px-40 text-simcosOrange text-5xl font-bold m-8 mb-4 ${inter.className}`}>
           HUNGRY?
-          <p className={`${inter.className} text-xs font-thin text-black`}>Welcome to Simco’s Home of the World's Largest Old Tyme Franks Serving iconic food & drink for lunch, dinner, and late-night cravings to the Boston area since 1935.</p>
+          <p className={`${inter.className} text-base font-medium text-black`}>Welcome to Simco’s Home of the World's Largest Old Tyme Franks</p>
+          <p className={`${inter.className} text-base font-medium text-black`}>Serving iconic food & drink for lunch, dinner, and late-night cravings to the Boston area since 1935.</p>
+          {/* <p className={`${inter.className} text-base font-medium text-black`}>to the Boston area since 1935.</p> */}
           {/* Action Buttons */}
           <div className="flex gap-4">
             <Button onClick={() => router.push('/overview')} className="bg-white shadow-lg shadow-gray-500 flex flex-col items-center text-left w-32 md:w-40 lg:w-48  rounded-[57px] rounded-br-[142px]">
